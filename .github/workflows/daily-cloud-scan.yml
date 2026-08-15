@@ -23,11 +23,24 @@ jobs:
         node-version: "20"
         cache: "npm"
 
+    - name: Cache Playwright Browsers
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/ms-playwright
+        key: playwright-browsers-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
     - name: Install Dependencies
       run: |
         npm ci
         npx playwright install-deps
         npx playwright install chromium
+
+    - name: Initialize Data Directories
+      run: |
+        mkdir -p data reports/staged batch/tracker-additions
+        if [ ! -f data/pipeline.md ]; then
+          printf "# Pipeline Inbox\\n\\n## Pendientes\\n\\n## Procesadas\\n" > data/pipeline.md
+        fi
 
     - name: Run Zero-Token Portal Scan
       run: |

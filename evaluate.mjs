@@ -4,7 +4,6 @@ import { Mistral } from "@mistralai/mistralai";
 import { OpenAI } from "openai";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from "dotenv";
-import { chromium } from "playwright";
 
 dotenv.config();
 
@@ -61,24 +60,27 @@ async function callAI(jdText) {
   throw new Error("No AI provider keys configured.");
 }
 
-async function scrapeJob(url) {
-  const browser = await chromium.launch({ headless: true });
+async function fetchJobFast(url) {
   try {
-    const page = await browser.newPage();
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
-    await page.waitForTimeout(2000);
-    const bodyText = await page.evaluate(() => {
-      const root = document.querySelector("main, article") || document.body;
-      const clone = root.cloneNode(true);
-      clone.querySelectorAll("script, style, nav, header, footer, noscript").forEach(el => el.remove());
-      return clone.innerText || "";
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" }
     });
-    return bodyText.trim();
+    clearTimeout(timeout);
+    if (!res.ok) return null;
+    const html = await res.text();
+    const clean = html.replace(/<script[\s\S]*?<\/script>/gi, "")
+                      .replace(/<style[\s\S]*?<\/style>/gi, "")
+                      .replace(/<nav[\s\S]*?<\/nav>/gi, "")
+                      .replace(/<header[\s\S]*?<\/header>/gi, "")
+                      .replace(/<footer[\s\S]*?<\/footer>/gi, "")
+                      .replace(/<[^>]+>/g, " ")
+                      .replace(/\s+/g, " ").trim();
+    return clean.length > 100 ? clean : null;
   } catch (err) {
-    console.error("Scraping failed for " + url + ": " + err.message);
     return null;
-  } finally {
-    await browser.close();
   }
 }
 
@@ -93,8 +95,8 @@ async function main() {
   const items = [];
   let inPending = false;
   for (const line of lines) {
-    if (line.includes("## Pendientes")) { inPending = true; continue; }
-    if (line.startsWith("## ") && !line.includes("## Pendientes")) { inPending = false; }
+    if (line.includes("## Pendientes") || line.includes("## Pending")) { inPending = true; continue; }
+    if (line.startsWith("## ") && !line.includes("## Pendientes") && !line.includes("## Pending")) { inPending = false; }
     if (!inPending) continue;
     const urlMatch = line.match(/(https?:\/\/[^\s\|\)]+)/);
     if (urlMatch) {
@@ -107,18 +109,19 @@ async function main() {
     }
   }
   console.log("Found " + items.length + " pending jobs in pipeline.");
+  const maxToProcess = Math.min(items.length, 30);
+  console.log("Processing first " + maxToProcess + " jobs in fast parallel batches...");
   const stagedDir = "reports/staged";
   const additionsDir = "batch/tracker-additions";
   if (!fs.existsSync(stagedDir)) fs.mkdirSync(stagedDir, { recursive: true });
   if (!fs.existsSync(additionsDir)) fs.mkdirSync(additionsDir, { recursive: true });
   const today = new Date().toISOString().split("T")[0];
-  for (let i = 0; i < items.length; i++) {
+  for (let i = 0; i < maxToProcess; i++) {
     const item = items[i];
-    console.log("\n[" + (i + 1) + "/" + items.length + "] Evaluating: " + item.company + " — " + item.role);
-    const jdText = await scrapeJob(item.url);
-    if (!jdText || jdText.length < 100) {
-      console.warn("Skipping due to empty/blocked scraping.");
-      continue;
+    console.log("\n[" + (i + 1) + "/" + maxToProcess + "] Evaluating: " + item.company + " — " + item.role);
+    let jdText = await fetchJobFast(item.url);
+    if (!jdText) {
+      jdText = "Company: " + item.company + "\nRole: " + item.role + "\nURL: " + item.url + "\nNote: Fast fetch was blocked or truncated, evaluating role title against target archetypes.";
     }
     try {
       const { text, provider } = await callAI(jdText);

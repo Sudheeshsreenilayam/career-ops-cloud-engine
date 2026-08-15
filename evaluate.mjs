@@ -47,7 +47,7 @@ async function callMistral(jdText) {
 async function callGroq(jdText) {
   if (!groqClient) return null;
   const res = await groqClient.chat.completions.create({
-    model: "llama-3.3-70b-versatile",
+    model: "openai/gpt-oss-120b",
     messages: [
       { role: "system", content: systemPrompt + "\n\nCandidate Profile:\n" + anonProfile },
       { role: "user", content: "JOB DESCRIPTION:\n\n" + jdText }

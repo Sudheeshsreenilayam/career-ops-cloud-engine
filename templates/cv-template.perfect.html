@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{NAME}} ΓÇö CV</title>
+<style>
+  /* P44 ATS THEME - High Density Operations Layout */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-size: 11pt;
+    line-height: 1.15;
+    color: #000;
+    background: #fff;
+  }
+
+  .page {
+    width: 100%;
+    max-width: {{PAGE_WIDTH}};
+    margin: 0 auto;
+    padding: 0.5in;
+  }
+
+  /* === HEADER === */
+  header {
+    text-align: center;
+    margin-bottom: 12pt;
+  }
+
+  .name {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0 0 2pt 0;
+  }
+
+  .subtitle {
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 0 0 2pt 0;
+  }
+
+  .tagline {
+    font-size: 10pt;
+    margin: 0 0 4pt 0;
+  }
+
+  .contact-info {
+    font-size: 9.5pt;
+    margin-top: 4pt;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .contact-info a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 12pt;
+  }
+
+  .section-title {
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 12pt 0 2pt 0;
+    color: #000;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1.5pt solid #000;
+    margin: 0 0 6pt 0;
+  }
+
+  /* === CONTENT === */
+  .summary-text {
+    text-align: justify;
+    font-size: 11pt;
+    line-height: 1.25;
+  }
+
+  /* Experience & Projects Mapping */
+  .job, .project {
+    margin-bottom: 10pt;
+  }
+
+  .job-header, .project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1pt;
+  }
+
+  .job-company, .project-title {
+    font-weight: bold;
+    font-size: 11pt;
+  }
+
+  .job-period, .project-dates {
+    font-weight: normal;
+    font-size: 10.5pt;
+  }
+
+  .job-role-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4pt;
+    margin-bottom: 1pt;
+  }
+
+  .job-role {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10.5pt;
+  }
+
+  .job-role-period {
+    font-weight: normal;
+    font-size: 10.5pt;
+  }
+
+  .job-location {
+    font-weight: normal;
+    font-size: 10pt;
+    color: #333;
+  }
+
+  ul {
+    margin: 2pt 0 4pt 15pt;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 3pt;
+    text-align: justify;
+    font-size: 10.5pt;
+    line-height: 1.2;
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    margin-top: 4pt;
+  }
+
+  .skill-row {
+    margin-bottom: 2pt;
+    font-size: 10.5pt;
+  }
+
+  .competency-tag {
+    display: inline-block;
+    margin-right: 12px;
+    font-weight: bold;
+  }
+
+  /* Pagination */
+  @media print {
+    .job, .project, .edu-item, .cert-item {
+      break-inside: avoid;
+    }
+    .page {
+      padding: 0;
+    }
+  }
+
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="name">{{NAME}}</div>
+    <div class="subtitle">{{TITLE}}</div>
+    <div class="tagline"><em>{{TAGLINE}}</em></div>
+    <div class="contact-info">
+      {{LOCATION}} | {{PHONE}} | <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> | <a href="{{LINKEDIN_URL}}">LinkedIn</a> | <a href="{{PORTFOLIO_URL}}">Portfolio</a>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">{{SECTION_SUMMARY}}</div>
+    <hr>
+    <div class="summary-text">{{SUMMARY_TEXT}}</div>
+  </div>
+
+  <!-- COMPETENCIES / SKILLS MATRIX -->
+  <div class="section">
+    <div class="section-title">{{SECTION_COMPETENCIES}}</div>
+    <hr>
+    <div class="skills-grid">
+      {{COMPETENCIES}}
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">{{SECTION_EXPERIENCE}}</div>
+    <hr>
+    {{EXPERIENCE}}
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">{{SECTION_PROJECTS}}</div>
+    <hr>
+    {{PROJECTS}}
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">{{SECTION_EDUCATION}}</div>
+    <hr>
+    {{EDUCATION}}
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">{{SECTION_CERTIFICATIONS}}</div>
+    <hr>
+    {{CERTIFICATIONS}}
+  </div>
+
+</div>
+
+</div>
+</body>
+</html>

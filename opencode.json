@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "groq": {
+      "npm": "aisdk:@ai-sdk/openai-compatible",
+      "name": "Groq",
+      "options": {
+        "baseURL": "https://api.groq.com/openai/v1",
+        "apiKey": "{env:GROQ_API_KEY}"
+      },
+      "models": {
+        "llama-3.3-70b-specdec": {
+          "name": "Llama 3.3 70B (Groq)"
+        },
+        "llama-3.1-8b-instant": {
+          "name": "Llama 3.1 8B (Groq)"
+        }
+      }
+    },
+    "mistral": {
+      "npm": "aisdk:@ai-sdk/openai-compatible",
+      "name": "Mistral AI",
+      "options": {
+        "baseURL": "https://api.mistral.ai/v1",
+        "apiKey": "{env:MISTRAL_API_KEY}"
+      },
+      "models": {
+        "mistral-large-latest": {
+          "name": "Mistral Large (Mistral)"
+        },
+        "open-mistral-7b": {
+          "name": "Open Mistral 7B (Mistral)"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp"],
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{NAME}} - Resume</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.15;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in 0.5in;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 12pt;
+        }
+
+        .name {
+            font-size: 18pt;
+            font-weight: bold;
+            margin: 0 0 2pt 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 13pt;
+            font-weight: bold;
+            margin: 0 0 2pt 0;
+        }
+
+        .tagline {
+            font-size: 10pt;
+            margin: 0 0 4pt 0;
+        }
+
+        .contact-info {
+            font-size: 9.5pt;
+            margin-top: 4pt;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 12pt 0 2pt 0;
+            text-transform: uppercase;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1.5pt solid #000;
+            margin: 0 0 6pt 0;
+        }
+
+        .entry {
+            margin-bottom: 8pt;
+        }
+        .company-entry {
+            margin-bottom: 8pt;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1pt;
+            align-items: baseline;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .context {
+            font-size: 10pt;
+            margin: 2pt 0 4pt 0;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 2pt 0 4pt 15pt;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3pt;
+            text-align: justify;
+        }
+
+        .gpa {
+            margin: 1pt 0 0 15pt;
+        }
+
+        #summary p {
+            text-align: justify;
+            margin: 4pt 0;
+        }
+
+        .skills-matrix p {
+            margin: 2pt 0;
+            font-size: 10.5pt;
+        }
+
+        @media print {
+            .entry {
+                page-break-inside: avoid;
+            }
+            .container {
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        @page {
+            size: letter;
+            margin: 0.5in 0.5in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name">{{NAME}}</h1>
+            <p class="subtitle">{{SUBTITLE}}</p>
+            <p class="tagline"><em>{{TAGLINE}}</em></p>
+            <div class="contact-info">
+                {{LOCATION}} | {{PHONE}} | <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> | <a href="{{LINKEDIN_URL}}">LinkedIn</a> | <a href="{{PORTFOLIO_URL}}">Portfolio</a>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <hr>
+            <div class="summary-text">
+                <p>{{SUMMARY_TEXT}}</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-matrix">
+                {{SKILLS}}
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <hr>
+            {{EXPERIENCE}}
+        </section>
+
+        <section id="projects">
+            <h2>Strategic Projects & Innovation</h2>
+            <hr>
+            {{PROJECTS}}
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <hr>
+            {{EDUCATION}}
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <hr>
+            {{CERTIFICATIONS}}
+        </section>
+    </div>
+</body>
+</html>

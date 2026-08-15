@@ -56,11 +56,12 @@ jobs:
         git config --global user.name "Career-Ops Cloud Bot"
         git config --global user.email "bot@career-ops.local"
         git clone https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/Sudheeshsreenilayam/career-ops.git private-repo
-        mkdir -p private-repo/reports
+        mkdir -p private-repo/reports private-repo/batch/tracker-additions
         cp -r reports/staged/* private-repo/reports/ 2>/dev/null || true
+        cp -r batch/tracker-additions/* private-repo/batch/tracker-additions/ 2>/dev/null || true
         cp data/scan-history.tsv private-repo/data/scan-history.tsv 2>/dev/null || true
         cd private-repo
         node merge-tracker.mjs || true
-        git add reports/ data/
+        git add reports/ batch/ data/
         git commit -m "chore: daily automated scan and evaluation sync [skip ci]" || echo "Nothing new to commit."
         git push origin main

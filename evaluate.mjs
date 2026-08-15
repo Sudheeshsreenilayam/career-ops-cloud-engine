@@ -89,10 +89,14 @@ async function main() {
     return;
   }
   const content = fs.readFileSync(pipelinePath, "utf8");
-  const urls = [...content.matchAll(/-\s*(https?:\/\/[^\s\)]+)/g)].map(m => m[1]);
-  console.log("Found " + urls.length + " jobs to evaluate.");
+  const pendingSection = content.split("## Procesadas")[0];
+  const urls = [...pendingSection.matchAll(/-\s*(https?:\/\/[^\s\)]+)/g)].map(m => m[1]);
+  console.log("Found " + urls.length + " pending jobs to evaluate.");
   const stagedDir = "reports/staged";
+  const additionsDir = "batch/tracker-additions";
   if (!fs.existsSync(stagedDir)) fs.mkdirSync(stagedDir, { recursive: true });
+  if (!fs.existsSync(additionsDir)) fs.mkdirSync(additionsDir, { recursive: true });
+  const today = new Date().toISOString().split("T")[0];
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
     console.log("\n[" + (i + 1) + "/" + urls.length + "] Evaluating: " + url);
@@ -122,9 +126,13 @@ async function main() {
         legitimacy = extract("LEGITIMACY") || legitimacy;
       }
       const slug = (company + "-" + role).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      const reportFile = stagedDir + "/staged-" + slug + "-" + Date.now() + ".md";
-      const reportContent = "# Evaluation: " + company + " — " + role + "\n\n**Date:** " + new Date().toISOString().split("T")[0] + "\n**Archetype:** " + archetype + "\n**Score:** " + score + "/5\n**Legitimacy:** " + legitimacy + "\n**PDF:** pending\n**Tool:** " + provider + "\n\n---\n\n" + text.replace(/---SCORE_SUMMARY---[\s\S]*?---END_SUMMARY---/, "").trim() + "\n";
+      const reportFilename = "staged-" + slug + "-" + Date.now() + ".md";
+      const reportFile = stagedDir + "/" + reportFilename;
+      const reportContent = "# Evaluation: " + company + " — " + role + "\n\n**Date:** " + today + "\n**Archetype:** " + archetype + "\n**Score:** " + score + "/5\n**Legitimacy:** " + legitimacy + "\n**PDF:** pending\n**Tool:** " + provider + "\n\n---\n\n" + text.replace(/---SCORE_SUMMARY---[\s\S]*?---END_SUMMARY---/, "").trim() + "\n";
       fs.writeFileSync(reportFile, reportContent, "utf8");
+      const status = parseFloat(score) >= 4.0 ? "Evaluated" : "SKIP";
+      const tsvLine = "AUTO_NUM\t" + today + "\t" + company + "\t" + role + "\t" + status + "\t" + score + "/5\t❌\t[AUTO_NUM](reports/" + reportFilename + ")\tAutomated cloud evaluation (" + provider + ")\n";
+      fs.writeFileSync(additionsDir + "/" + slug + "-" + Date.now() + ".tsv", tsvLine, "utf8");
       console.log("✅ Evaluated (" + score + "/5 via " + provider + ") -> " + reportFile);
     } catch (e) {
       console.error("Evaluation error: " + e.message);

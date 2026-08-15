@@ -1,0 +1,5 @@
+# career-ops plugin activation — see config/plugins.example.yml
+plugins:
+  outlook-interviews:
+    enabled: true
+    tenant: consumers

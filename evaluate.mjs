@@ -156,7 +156,7 @@ async function main() {
     }
   }
   console.log("Found " + items.length + " pending jobs in pipeline.");
-  const maxToProcess = Math.min(items.length, 15);
+  const maxToProcess = Math.min(items.length, 100);
   console.log("Starting parallel multi-worker pool (concurrency: 5) for " + maxToProcess + " jobs...");
   const stagedDir = "reports/staged";
   const additionsDir = "batch/tracker-additions";
@@ -164,7 +164,7 @@ async function main() {
   if (!fs.existsSync(additionsDir)) fs.mkdirSync(additionsDir, { recursive: true });
   const today = new Date().toISOString().split("T")[0];
 
-  const concurrency = 5;
+  const concurrency = 8;
   let activeIndex = 0;
   async function worker() {
     while (activeIndex < maxToProcess) {

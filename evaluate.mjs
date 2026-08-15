@@ -89,18 +89,33 @@ async function main() {
     return;
   }
   const content = fs.readFileSync(pipelinePath, "utf8");
-  const pendingSection = content.split("## Procesadas")[0];
-  const urls = [...pendingSection.matchAll(/-\s*(https?:\/\/[^\s\)]+)/g)].map(m => m[1]);
-  console.log("Found " + urls.length + " pending jobs to evaluate.");
+  const lines = content.split("\n");
+  const items = [];
+  let inPending = false;
+  for (const line of lines) {
+    if (line.includes("## Pendientes")) { inPending = true; continue; }
+    if (line.startsWith("## ") && !line.includes("## Pendientes")) { inPending = false; }
+    if (!inPending) continue;
+    const urlMatch = line.match(/(https?:\/\/[^\s\|\)]+)/);
+    if (urlMatch) {
+      const parts = line.split("|").map(p => p.trim());
+      items.push({
+        url: urlMatch[1],
+        company: parts[1] || "Company",
+        role: parts[2] || "Role"
+      });
+    }
+  }
+  console.log("Found " + items.length + " pending jobs in pipeline.");
   const stagedDir = "reports/staged";
   const additionsDir = "batch/tracker-additions";
   if (!fs.existsSync(stagedDir)) fs.mkdirSync(stagedDir, { recursive: true });
   if (!fs.existsSync(additionsDir)) fs.mkdirSync(additionsDir, { recursive: true });
   const today = new Date().toISOString().split("T")[0];
-  for (let i = 0; i < urls.length; i++) {
-    const url = urls[i];
-    console.log("\n[" + (i + 1) + "/" + urls.length + "] Evaluating: " + url);
-    const jdText = await scrapeJob(url);
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    console.log("\n[" + (i + 1) + "/" + items.length + "] Evaluating: " + item.company + " — " + item.role);
+    const jdText = await scrapeJob(item.url);
     if (!jdText || jdText.length < 100) {
       console.warn("Skipping due to empty/blocked scraping.");
       continue;
@@ -108,8 +123,8 @@ async function main() {
     try {
       const { text, provider } = await callAI(jdText);
       const summaryMatch = text.match(/---SCORE_SUMMARY---\s*([\s\S]*?)---END_SUMMARY---/);
-      let company = "company";
-      let role = "role";
+      let company = item.company;
+      let role = item.role;
       let score = "1.0";
       let archetype = "General";
       let legitimacy = "High Confidence";

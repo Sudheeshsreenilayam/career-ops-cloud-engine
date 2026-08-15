@@ -59,7 +59,7 @@ async function callGroq(jdText) {
 
 async function callGemini(jdText) {
   if (!geminiClient) return null;
-  const model = geminiClient.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = geminiClient.getGenerativeModel({ model: "gemini-2.5-flash" });
   const prompt = systemPrompt + "\n\nCandidate Profile:\n" + anonProfile + "\n\nJOB DESCRIPTION:\n\n" + jdText;
   const res = await model.generateContent(prompt);
   return { text: res.response.text(), provider: "Gemini" };

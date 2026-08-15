@@ -156,7 +156,7 @@ async function main() {
     }
   }
   console.log("Found " + items.length + " pending jobs in pipeline.");
-  const maxToProcess = Math.min(items.length, 100);
+  const maxToProcess = items.length;
   console.log("Starting parallel multi-worker pool (concurrency: 5) for " + maxToProcess + " jobs...");
   const stagedDir = "reports/staged";
   const additionsDir = "batch/tracker-additions";

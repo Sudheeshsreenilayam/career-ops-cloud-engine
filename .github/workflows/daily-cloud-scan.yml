@@ -1,0 +1,66 @@
+name: Daily Cloud Scanner & Evaluator
+
+on:
+  schedule:
+    # 5:00 AM CDT (Chicago) -> 10:00 UTC
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan-and-evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Public Engine Repo
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+        cache: "npm"
+
+    - name: Install Dependencies
+      run: |
+        npm ci
+        npx playwright install-deps
+        npx playwright install chromium
+
+    - name: Run Zero-Token Portal Scan
+      run: |
+        echo "Running zero-token portal scanner..."
+        node scan.mjs
+
+    - name: Run AI Evaluator with Multi-Model Failover
+      env:
+        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        ANONYMIZED_PROFILE: ${{ secrets.ANONYMIZED_PROFILE }}
+      run: |
+        echo "Evaluating newly scanned roles..."
+        node evaluate.mjs
+
+    - name: Sync Reports & History to Private Career Ops Repo
+      env:
+        PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+      run: |
+        if [ -z "$PRIVATE_REPO_TOKEN" ]; then
+          echo "No PRIVATE_REPO_TOKEN configured. Skipping private sync."
+          exit 0
+        fi
+        echo "Syncing evaluated results to private repository..."
+        git config --global user.name "Career-Ops Cloud Bot"
+        git config --global user.email "bot@career-ops.local"
+        git clone https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/Sudheeshsreenilayam/career-ops.git private-repo
+        mkdir -p private-repo/reports
+        cp -r reports/staged/* private-repo/reports/ 2>/dev/null || true
+        cp data/scan-history.tsv private-repo/data/scan-history.tsv 2>/dev/null || true
+        cd private-repo
+        node merge-tracker.mjs || true
+        git add reports/ data/
+        git commit -m "chore: daily automated scan and evaluation sync [skip ci]" || echo "Nothing new to commit."
+        git push origin main

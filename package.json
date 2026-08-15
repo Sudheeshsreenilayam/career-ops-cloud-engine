@@ -1,0 +1,14 @@
+{
+  "name": "career-ops-cloud-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@mistralai/mistralai": "^2.6.1",
+    "cheerio": "^1.2.0",
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.1",
+    "openai": "^6.42.0",
+    "playwright": "^1.58.1"
+  }
+}

@@ -1422,6 +1422,37 @@ tracked_companies:
     careers_url: https://workada.com/careers
     enabled: true
     notes: Freelance and remote work platform connecting businesses with talent.
+  - name: Capital One
+    careers_url: https://www.capitalonecareers.com/
+    provider: workday
+    enabled: true
+    notes: Financial services & tech bank. Major Chicago office + remote roles in Operations Analytics, PM, Process Improvement.
+  - name: LinkedIn Jobs (Chicago Operations)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Manager&location=Chicago%2C%20IL
+    provider: linkedin
+    searchKeywords: Operations Program Manager
+    searchLocation: Chicago, IL
+    enabled: true
+    notes: Zero-token live guest feed for Chicago Operations & Program Management roles.
+  - name: LinkedIn Jobs (Remote Analytics)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Data%20Analytics%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Operations Analytics Manager
+    searchLocation: United States
+    enabled: true
+    notes: Zero-token live guest feed for US Remote & National Analytics / BI roles.
+  - name: BuiltIn Chicago (Operations)
+    careers_url: https://www.builtinchicago.org/jobs/operations
+    provider: builtin
+    category: operations
+    enabled: true
+    notes: Chicago tech ecosystem operations, delivery, and program management roles.
+  - name: BuiltIn Chicago (Data & Analytics)
+    careers_url: https://www.builtinchicago.org/jobs/data-analytics
+    provider: builtin
+    category: data-analytics
+    enabled: true
+    notes: Chicago tech ecosystem business intelligence and analytics engineer roles.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops

@@ -1427,20 +1427,6 @@ tracked_companies:
     provider: workday
     enabled: true
     notes: Financial services & tech bank. Major Chicago office + remote roles in Operations Analytics, PM, Process Improvement.
-  - name: LinkedIn Jobs (Chicago Operations)
-    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Manager&location=Chicago%2C%20IL
-    provider: linkedin
-    searchKeywords: Operations Program Manager
-    searchLocation: Chicago, IL
-    enabled: true
-    notes: Zero-token live guest feed for Chicago Operations & Program Management roles.
-  - name: LinkedIn Jobs (Remote Analytics)
-    careers_url: https://www.linkedin.com/jobs/search/?keywords=Data%20Analytics%20Manager&location=United%20States
-    provider: linkedin
-    searchKeywords: Operations Analytics Manager
-    searchLocation: United States
-    enabled: true
-    notes: Zero-token live guest feed for US Remote & National Analytics / BI roles.
   - name: BuiltIn Chicago (Operations)
     careers_url: https://www.builtinchicago.org/jobs/operations
     provider: builtin
@@ -1453,6 +1439,76 @@ tracked_companies:
     category: data-analytics
     enabled: true
     notes: Chicago tech ecosystem business intelligence and analytics engineer roles.
+  - name: LinkedIn Jobs — Operations PM (Chicago)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Program%20Manager&location=Chicago%2C%20IL
+    provider: linkedin
+    searchKeywords: Operations Program Manager
+    searchLocation: Chicago, IL
+    enabled: true
+    notes: 'Archetype: Operations Program Manager / PM in Chicago, IL'
+  - name: LinkedIn Jobs — Operations PM (Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Program%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Operations Program Manager
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: Operations Program Manager / PM (US Remote)'
+  - name: LinkedIn Jobs — Operations Analytics & BI Manager (Chicago)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Analytics%20Manager&location=Chicago%2C%20IL
+    provider: linkedin
+    searchKeywords: Operations Analytics Manager
+    searchLocation: Chicago, IL
+    enabled: true
+    notes: 'Archetype: Operations Analytics / BI Manager in Chicago, IL'
+  - name: LinkedIn Jobs — Operations Analytics & BI Manager (Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Operations%20Analytics%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Operations Analytics Manager
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: Operations Analytics / BI Manager (US Remote)'
+  - name: LinkedIn Jobs — Senior Data Analyst (Chicago)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Senior%20Data%20Analyst&location=Chicago%2C%20IL
+    provider: linkedin
+    searchKeywords: Senior Data Analyst
+    searchLocation: Chicago, IL
+    enabled: true
+    notes: 'Archetype: Senior / Lead Data Analyst in Chicago, IL'
+  - name: LinkedIn Jobs — Analytics Engineer (Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Analytics%20Engineer&location=United%20States
+    provider: linkedin
+    searchKeywords: Analytics Engineer
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: Analytics Engineer (US Remote)'
+  - name: LinkedIn Jobs — Technical Program Manager (Chicago)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Technical%20Program%20Manager&location=Chicago%2C%20IL
+    provider: linkedin
+    searchKeywords: Technical Program Manager
+    searchLocation: Chicago, IL
+    enabled: true
+    notes: 'Archetype: TPM / Technical PM in Chicago, IL'
+  - name: LinkedIn Jobs — Technical Program Manager (Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Technical%20Program%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Technical Program Manager
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: TPM / Technical PM (US Remote)'
+  - name: LinkedIn Jobs — Service Delivery Manager (Chicago / Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Service%20Delivery%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Service Delivery Manager
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: Service Delivery Manager (200+ FTE scale)'
+  - name: LinkedIn Jobs — Automation & Workflow Specialist (Remote)
+    careers_url: https://www.linkedin.com/jobs/search/?keywords=Automation%20Manager&location=United%20States
+    provider: linkedin
+    searchKeywords: Automation Program Manager
+    searchLocation: United States
+    enabled: true
+    notes: 'Archetype: Agentic Workflows & Automation'
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops

@@ -1509,6 +1509,27 @@ tracked_companies:
     searchLocation: United States
     enabled: true
     notes: 'Archetype: Agentic Workflows & Automation'
+  - name: a16z Portfolio Startups (Operations & PM)
+    careers_url: https://speedrun-talent-network.com/jobs
+    provider: a16z-speedrun-talent
+    q: Operations Program Manager
+    max_pages: 5
+    enabled: true
+    notes: Andreessen Horowitz (a16z) Speedrun & Portfolio Talent Network — Operations & PM
+  - name: a16z Portfolio Startups (Analytics & BI)
+    careers_url: https://speedrun-talent-network.com/jobs
+    provider: a16z-speedrun-talent
+    q: Operations Analytics
+    max_pages: 5
+    enabled: true
+    notes: Andreessen Horowitz (a16z) Speedrun & Portfolio Talent Network — Data & Analytics
+  - name: a16z Portfolio Startups (Technical PM & Automation)
+    careers_url: https://speedrun-talent-network.com/jobs
+    provider: a16z-speedrun-talent
+    q: Technical Program Manager
+    max_pages: 5
+    enabled: true
+    notes: Andreessen Horowitz (a16z) Speedrun & Portfolio Talent Network — TPM & Automation
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops

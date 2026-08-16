@@ -1310,6 +1310,118 @@ tracked_companies:
     careers_url: https://www.arize.com/careers
     enabled: true
     notes: AI observability and monitoring platform for machine learning models.
+  - name: Amazon Kuiper Infrastructure LLC
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Satellite broadband internet subsidiary of Amazon.
+  - name: WWT
+    careers_url: https://www.wwt.com/careers
+    enabled: true
+    notes: Global technology solutions provider specializing in IT infrastructure, digital strategy, and supply chain solutions.
+  - name: TalentPluto
+    careers_url: https://www.talentpluto.com/careers
+    enabled: true
+    notes: AI-driven recruitment and talent management platform.
+  - name: Alight
+    careers_url: https://alight.com/careers
+    enabled: true
+    notes: Cloud-based human capital and benefits administration solutions provider.
+  - name: Google Operations Center
+    careers_url: https://careers.google.com/
+    enabled: true
+    notes: Global operations and support hubs for Google's products and services.
+  - name: Intuit
+    careers_url: https://www.intuit.com/careers/
+    enabled: true
+    notes: Financial software company known for TurboTax, QuickBooks, and Mint.
+  - name: Labcorp
+    careers_url: https://careers.labcorp.com/
+    enabled: true
+    notes: Clinical laboratory and diagnostics company.
+  - name: Genpact
+    careers_url: https://www.genpact.com/careers
+    enabled: true
+    notes: Professional services firm focused on digital transformation and business process management.
+  - name: CareSource
+    careers_url: https://www.caresource.com/about/careers/
+    enabled: true
+    notes: Nonprofit health plan provider serving Medicaid, Medicare, and marketplace members.
+  - name: Supernova Technology
+    careers_url: https://www.supernovatech.com/careers
+    enabled: true
+    notes: Fintech company specializing in investment management software.
+  - name: Chewy
+    careers_url: https://www.chewy.com/jobs
+    enabled: true
+    notes: E-commerce platform for pet products and services.
+  - name: GitLab
+    careers_url: https://about.gitlab.com/jobs/
+    enabled: true
+    notes: DevOps platform and open-source software development tool.
+  - name: BAE Systems
+    careers_url: https://www.baesystems.com/en/careers
+    enabled: true
+    notes: Defense, aerospace, and security company.
+  - name: Achieve
+    careers_url: https://www.achieve.com/careers
+    enabled: true
+    notes: Financial services company offering personal loans and debt resolution.
+  - name: Optum
+    careers_url: https://www.optum.com/careers.html
+    enabled: true
+    notes: Health services and innovation company, part of UnitedHealth Group.
+  - name: EchoStar
+    careers_url: https://www.echostar.com/careers
+    enabled: true
+    notes: Satellite communications and internet services provider.
+  - name: Apryse
+    careers_url: https://www.apryse.com/company/careers
+    enabled: true
+    notes: Document technology company specializing in PDF and document processing solutions.
+  - name: Toast
+    careers_url: https://careers.toasttab.com/
+    enabled: true
+    notes: Cloud-based restaurant management software and point-of-sale system.
+  - name: Panasonic
+    careers_url: https://na.panasonic.com/us/careers
+    enabled: true
+    notes: Multinational electronics corporation.
+  - name: Kinective
+    careers_url: https://kinective.com/careers
+    enabled: true
+    notes: Construction technology company providing project management software.
+  - name: Casella Waste Systems
+    careers_url: https://www.casella.com/careers
+    enabled: true
+    notes: Regional solid waste, recycling, and resource management services provider.
+  - name: City Colleges of Chicago
+    careers_url: https://www.ccc.edu/employment/Pages/default.aspx
+    enabled: true
+    notes: Public community college system in Chicago.
+  - name: Nodes & Links
+    careers_url: https://www.nodesandlinks.com/careers
+    enabled: true
+    notes: AI-driven project delivery platform for complex infrastructure projects.
+  - name: Innovamat
+    careers_url: https://www.innovamat.com/en/careers
+    enabled: true
+    notes: Educational technology company focused on mathematics learning.
+  - name: Eltropy
+    careers_url: https://www.eltropy.com/careers
+    enabled: true
+    notes: Digital communications platform for credit unions and community banks.
+  - name: Paylocity
+    careers_url: https://www.paylocity.com/careers/
+    enabled: true
+    notes: Cloud-based payroll and human capital management software provider.
+  - name: Ladders
+    careers_url: https://www.theladders.com/company/careers
+    enabled: true
+    notes: Job search platform specializing in high-paying career opportunities.
+  - name: Workada
+    careers_url: https://workada.com/careers
+    enabled: true
+    notes: Freelance and remote work platform connecting businesses with talent.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops

@@ -35,11 +35,21 @@ jobs:
         npx playwright install-deps
         npx playwright install chromium
 
-    - name: Initialize Data Directories
+    - name: Pre-fetch Scan History & Tracker from Private Repo
+      env:
+        PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
       run: |
         mkdir -p data reports/staged batch/tracker-additions
+        if [ -n "$PRIVATE_REPO_TOKEN" ]; then
+          echo "Fetching existing scan history and applications tracker..."
+          git clone --depth 1 https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/Sudheeshsreenilayam/career-ops.git temp-repo
+          cp temp-repo/data/scan-history.tsv data/scan-history.tsv 2>/dev/null || true
+          cp temp-repo/data/applications.md data/applications.md 2>/dev/null || true
+          cp -r temp-repo/reports reports/existing-reports 2>/dev/null || true
+          rm -rf temp-repo
+        fi
         if [ ! -f data/pipeline.md ]; then
-          printf "# Pipeline Inbox\\n\\n## Pendientes\\n\\n## Procesadas\\n" > data/pipeline.md
+          printf "# Pipeline Inbox\n\n## Pendientes\n\n## Procesadas\n" > data/pipeline.md
         fi
 
     - name: Run Zero-Token Portal Scan
@@ -57,7 +67,7 @@ jobs:
         echo "Evaluating newly scanned roles..."
         node evaluate.mjs
 
-    - name: Sync Reports & History to Private Career Ops Repo
+    - name: Deduplicate and Sync to Private Career Ops Repo
       env:
         PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
       run: |
@@ -65,7 +75,7 @@ jobs:
           echo "No PRIVATE_REPO_TOKEN configured. Skipping private sync."
           exit 0
         fi
-        echo "Syncing evaluated results to private repository..."
+        echo "Syncing evaluated results to private repository with deduplication..."
         git config --global user.name "Career-Ops Cloud Bot"
         git config --global user.email "bot@career-ops.local"
         git clone https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/Sudheeshsreenilayam/career-ops.git private-repo
@@ -75,6 +85,7 @@ jobs:
         cp data/scan-history.tsv private-repo/data/scan-history.tsv 2>/dev/null || true
         cd private-repo
         node merge-tracker.mjs || true
+        node dedup-tracker.mjs || true
         git add -f reports/ batch/tracker-additions/ data/applications.md data/scan-history.tsv
         git commit -m "chore: daily automated scan and evaluation sync [skip ci]" || echo "Nothing new to commit."
         git push origin main

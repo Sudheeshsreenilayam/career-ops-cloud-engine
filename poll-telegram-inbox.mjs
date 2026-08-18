@@ -27,6 +27,16 @@ async function fetchTelegramUpdates() {
   return data.result || [];
 }
 
+async function acknowledgeTelegramUpdates(newMaxUpdateId) {
+  try {
+    // Calling getUpdates with offset = maxUpdateId + 1 tells Telegram to permanently acknowledge and delete those updates from their server queue
+    await fetch(`https://api.telegram.org/bot${token}/getUpdates?offset=${newMaxUpdateId + 1}&limit=1`);
+    console.log(`✅ Acknowledged updates up to ${newMaxUpdateId} on Telegram servers.`);
+  } catch (e) {
+    console.warn("Failed to ack updates on Telegram:", e.message);
+  }
+}
+
 async function sendTelegramMessage(toChatId, text) {
   try {
     await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
@@ -84,9 +94,10 @@ async function main() {
     }
   }
 
-  // Persist updated lastUpdateId
+  // Persist updated lastUpdateId locally and acknowledge on Telegram servers
   fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
   fs.writeFileSync(stateFile, JSON.stringify({ lastUpdateId }, null, 2), "utf8");
+  await acknowledgeTelegramUpdates(lastUpdateId);
 
   if (urlsToProcess.length === 0) {
     console.log("No URLs found in the received messages.");

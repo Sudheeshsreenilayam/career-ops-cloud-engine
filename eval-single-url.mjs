@@ -10,6 +10,8 @@ dotenv.config();
 const mistralClient = process.env.MISTRAL_API_KEY ? new Mistral({ apiKey: process.env.MISTRAL_API_KEY }) : null;
 const groqClient = process.env.GROQ_API_KEY ? new OpenAI({ apiKey: process.env.GROQ_API_KEY, baseURL: "https://api.groq.com/openai/v1" }) : null;
 const geminiClient = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY) : null;
+const githubModelsToken = process.env.GITHUB_TOKEN || process.env.PRIVATE_REPO_TOKEN || process.env.GITHUB_PAT;
+const githubModelsClient = githubModelsToken ? new OpenAI({ baseURL: "https://models.inference.ai.azure.com", apiKey: githubModelsToken }) : null;
 
 const anonProfile = process.env.ANONYMIZED_PROFILE || "CANDIDATE TARGET: Operations Analytics Manager, Senior Data Analyst, Operations Program Manager\nCORE SKILLS: SQL, Python, Power BI, Advanced Excel, Lean Six Sigma Green Belt, ETL data modeling\nEXPERIENCE: 8+ years leading operations and analytics teams (200+ FTEs).\nEDUCATION: MS in Business Analytics, BS in Engineering.";
 
@@ -42,9 +44,10 @@ LEGITIMACY: <High Confidence | Proceed with Caution | Suspicious>
 
 async function callAI(jdText) {
   const providers = [
-    { name: "Mistral", fn: callMistral },
     { name: "Groq", fn: callGroq },
-    { name: "Gemini", fn: callGemini }
+    { name: "Gemini", fn: callGemini },
+    { name: "GitHub-Models", fn: callGitHubModels },
+    { name: "Mistral", fn: callMistral }
   ];
 
   for (const p of providers) {
@@ -56,6 +59,19 @@ async function callAI(jdText) {
     }
   }
   throw new Error("All AI providers failed.");
+}
+
+async function callGitHubModels(jdText) {
+  if (!githubModelsClient) return null;
+  const res = await githubModelsClient.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [
+      { role: "system", content: `${systemPrompt}\n\nCandidate Profile:\n${anonProfile}` },
+      { role: "user", content: `JOB DESCRIPTION:\n\n${jdText}` }
+    ],
+    temperature: 0.2
+  });
+  return res.choices[0].message.content;
 }
 
 async function callMistral(jdText) {

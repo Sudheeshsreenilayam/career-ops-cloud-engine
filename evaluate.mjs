@@ -10,15 +10,18 @@ dotenv.config();
 const mistralClient = process.env.MISTRAL_API_KEY ? new Mistral({ apiKey: process.env.MISTRAL_API_KEY }) : null;
 const groqClient = process.env.GROQ_API_KEY ? new OpenAI({ apiKey: process.env.GROQ_API_KEY, baseURL: "https://api.groq.com/openai/v1" }) : null;
 const geminiClient = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY) : null;
+const githubModelsToken = process.env.GITHUB_TOKEN || process.env.PRIVATE_REPO_TOKEN || process.env.GITHUB_PAT;
+const githubModelsClient = githubModelsToken ? new OpenAI({ baseURL: "https://models.inference.ai.azure.com", apiKey: githubModelsToken }) : null;
 
 const anonProfile = process.env.ANONYMIZED_PROFILE || "CANDIDATE TARGET: Operations Analytics Manager, Senior Data Analyst, Operations Program Manager\nCORE SKILLS: SQL, Python, Power BI, Advanced Excel, Lean Six Sigma Green Belt, ETL data modeling\nEXPERIENCE: 8+ years leading operations and analytics teams (200+ FTEs).\nEDUCATION: MS in Business Analytics, BS in Engineering.";
 
 const systemPrompt = "You are career-ops cloud engine, an AI-powered job search evaluator.\n\nTRAJECTORY AND DOMAIN CHECK (CRITICAL):\nCheck if the role is a pure software engineer/developer, DevOps/reliability engineer, database administrator (DBA), hardware/electrical/mechanical/facilities engineer, QA/tester, IT support technician, recruiter, sales/marketing representative, or generic administrative assistant.\nIf it is ANY of these, you MUST classify the archetype as Trajectory Mismatch, score the role exactly 1.0/5, and recommend SKIP in Block E.\n\nSCORING RULES:\nScore the role from 0.0 to 5.0 based on fit for Operations Analytics Manager / Senior Data Analyst / Operations PM.\n\nREQUIRED OUTPUT STRUCTURE:\nBlock A: Fit & Gap Analysis\nBlock B: Scoring Breakdown (Score from 0.0 to 5.0)\nBlock C: Goal Alignment\nBlock D: Compensation Research\nBlock E: Recommendation (Apply/Hold/Skip)\nBlock F: Tailwind & Interview Prep\nBlock G: Legitimacy (High Confidence / Proceed with Caution / Suspicious)\n\nAt the very end, output this summary block:\n---SCORE_SUMMARY---\nCOMPANY: <company name>\nROLE: <role title>\nSCORE: <global score as decimal, e.g. 4.2>\nARCHETYPE: <detected archetype or Trajectory Mismatch>\nLEGITIMACY: <High Confidence | Proceed with Caution | Suspicious>\n---END_SUMMARY---";
 
-async function callAI(jdText, preferredProvider = "Mistral") {
-  const providers = preferredProvider === "Groq" ? [callGroq, callMistral, callGemini]
-                  : preferredProvider === "Gemini" ? [callGemini, callMistral, callGroq]
-                  : [callMistral, callGroq, callGemini];
+async function callAI(jdText, preferredProvider = "Groq") {
+  const providers = preferredProvider === "Groq" ? [callGroq, callGemini, callGitHubModels, callMistral]
+                  : preferredProvider === "Gemini" ? [callGemini, callGroq, callGitHubModels, callMistral]
+                  : preferredProvider === "GitHub" ? [callGitHubModels, callGroq, callGemini, callMistral]
+                  : [callMistral, callGroq, callGemini, callGitHubModels];
 
   for (const fn of providers) {
     try {
@@ -29,6 +32,19 @@ async function callAI(jdText, preferredProvider = "Mistral") {
     }
   }
   throw new Error("All AI providers failed.");
+}
+
+async function callGitHubModels(jdText) {
+  if (!githubModelsClient) return null;
+  const res = await githubModelsClient.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [
+      { role: "system", content: systemPrompt + "\n\nCandidate Profile:\n" + anonProfile },
+      { role: "user", content: "JOB DESCRIPTION:\n\n" + jdText }
+    ],
+    temperature: 0.2
+  });
+  return { text: res.choices[0].message.content, provider: "GitHub-Models (GPT-4o-mini)" };
 }
 
 async function callMistral(jdText) {

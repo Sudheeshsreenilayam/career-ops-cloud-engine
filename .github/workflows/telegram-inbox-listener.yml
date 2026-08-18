@@ -1,0 +1,68 @@
+name: Telegram Inbox Listener & Evaluator
+
+on:
+  schedule:
+    # Runs every 10 minutes throughout the day (Mon-Sun)
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  poll-and-evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Cloud Engine Repo
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+        cache: "npm"
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Fetch and Process Telegram Messages
+      env:
+        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        ANONYMIZED_PROFILE: ${{ secrets.ANONYMIZED_PROFILE }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: |
+        node poll-telegram-inbox.mjs
+
+    - name: Sync Evaluated Reports to Private Career Ops Repo
+      env:
+        PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+      run: |
+        if [ -d "reports/staged" ] && [ "$(ls -A reports/staged 2>/dev/null)" ]; then
+          echo "Found newly evaluated reports. Syncing to private repository..."
+          git config --global user.name "Career-Ops Cloud Bot"
+          git config --global user.email "bot@career-ops.local"
+          git clone https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/Sudheeshsreenilayam/career-ops.git private-repo
+          mkdir -p private-repo/reports private-repo/batch/tracker-additions
+          cp -r reports/staged/* private-repo/reports/ 2>/dev/null || true
+          cp -r batch/tracker-additions/* private-repo/batch/tracker-additions/ 2>/dev/null || true
+          cd private-repo
+          node merge-tracker.mjs || true
+          node dedup-tracker.mjs || true
+          git add -f reports/ batch/tracker-additions/ data/applications.md
+          git commit -m "chore: telegram evaluated job sync [skip ci]" || echo "Nothing new to commit."
+          git push origin main
+        else
+          echo "No new reports generated in this cycle."
+        fi
+
+    - name: Persist Telegram Processed Message State
+      run: |
+        git config --global user.name "Career-Ops Cloud Bot"
+        git config --global user.email "bot@career-ops.local"
+        git add data/telegram-last-update.json 2>/dev/null || true
+        git commit -m "chore: update telegram offset state [skip ci]" || echo "No state changes."
+        git push origin main || echo "Push skipped."

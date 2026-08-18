@@ -115,13 +115,16 @@ async function fetchJobFast(url) {
 async function sendTelegramNotification(token, chatId, company, role, score, archetype, url, reportUrl) {
   if (!token || !chatId) return;
 
-  const emoji = parseFloat(score) >= 4.5 ? "🔥" : parseFloat(score) >= 4.0 ? "🎯" : "⚠️";
+  const cleanScore = (score || "").toString().replace(/[^0-9.]/g, "");
+  const numScore = parseFloat(cleanScore) || 1.0;
+
+  const emoji = numScore >= 4.5 ? "🔥" : numScore >= 4.0 ? "🎯" : "⚠️";
   let text = `${emoji} *Mobile Job Evaluated!*\n\n`;
   text += `🏢 *Company:* ${company}\n`;
   text += `💼 *Role:* ${role}\n`;
-  text += `⭐ *Score:* *${score}/5* (${archetype})\n\n`;
+  text += `⭐ *Score:* *${cleanScore}/5* (${archetype})\n\n`;
   text += `🔗 [Direct Job Posting](${url})\n`;
-  if (parseFloat(score) >= 4.0) {
+  if (numScore >= 4.0) {
     text += `\n✅ *Action:* Added to top-fit application queue in private repo!`;
   } else {
     text += `\n🚫 *Recommendation:* Below 4.0 threshold (Skipped).`;
@@ -169,15 +172,30 @@ async function main() {
   if (summaryMatch) {
     const block = summaryMatch[1];
     const extract = (k) => {
-      const m = block.match(new RegExp(`${k}:\\s*(.+)`));
-      return m ? m[1].trim() : "";
+      const m = block.match(new RegExp(`${k}:\\s*([^\n\r]+)`, "i"));
+      return m ? m[1].replace(/[*_~`]/g, "").trim() : "";
     };
     company = extract("COMPANY") || company;
     role = extract("ROLE") || role;
-    score = extract("SCORE") || score;
+    const rawScore = extract("SCORE");
+    if (rawScore) {
+      const scoreNumMatch = rawScore.match(/([0-9]+(?:\.[0-9]+)?)/);
+      if (scoreNumMatch) score = scoreNumMatch[1];
+    }
     archetype = extract("ARCHETYPE") || archetype;
     legitimacy = extract("LEGITIMACY") || legitimacy;
+  } else {
+    // Fallback search in report body if summary block was missed
+    const scoreBodyMatch = text.match(/\*\*Score:\*\*\s*([0-9]+(?:\.[0-9]+)?)/i) || text.match(/Score:\s*([0-9]+(?:\.[0-9]+)?)/i);
+    if (scoreBodyMatch) score = scoreBodyMatch[1];
   }
+
+  // Clean company & role of formatting
+  company = company.replace(/[*_~`]/g, "").trim();
+  role = role.replace(/[*_~`]/g, "").trim();
+  archetype = archetype.replace(/[*_~`]/g, "").trim();
+  legitimacy = legitimacy.replace(/[*_~`]/g, "").trim();
+  const numScore = parseFloat(score) || 1.0;
 
   const today = new Date().toISOString().split("T")[0];
   const stagedDir = path.join(process.cwd(), "reports", "staged");
@@ -192,7 +210,7 @@ async function main() {
   const reportContent = `# Evaluation: ${company} — ${role}\n\n**Date:** ${today}\n**Archetype:** ${archetype}\n**Score:** ${score}/5\n**URL:** ${targetUrl}\n**Legitimacy:** ${legitimacy}\n**PDF:** pending\n**Tool:** ${provider}\n\n---\n\n${text.replace(/---SCORE_SUMMARY---[\s\S]*?---END_SUMMARY---/, "").trim()}\n`;
   fs.writeFileSync(reportFile, reportContent, "utf8");
 
-  const status = parseFloat(score) >= 4.0 ? "Evaluated" : "SKIP";
+  const status = numScore >= 4.0 ? "Evaluated" : "SKIP";
   let nextAppNum = 1;
   const appFile = path.join(process.cwd(), "data", "applications.md");
   if (fs.existsSync(appFile)) {

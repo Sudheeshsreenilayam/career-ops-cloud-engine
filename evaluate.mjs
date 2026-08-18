@@ -120,10 +120,10 @@ async function processJob(item, index, total, stagedDir, additionsDir, today) {
     const slug = (company + "-" + role).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const reportFilename = "staged-" + slug + "-" + Date.now() + ".md";
     const reportFile = stagedDir + "/" + reportFilename;
-    const reportContent = "# Evaluation: " + company + " — " + role + "\n\n**Date:** " + today + "\n**Archetype:** " + archetype + "\n**Score:** " + score + "/5\n**Legitimacy:** " + legitimacy + "\n**PDF:** pending\n**Tool:** " + provider + "\n\n---\n\n" + text.replace(/---SCORE_SUMMARY---[\s\S]*?---END_SUMMARY---/, "").trim() + "\n";
+    const reportContent = "# Evaluation: " + company + " — " + role + "\n\n**Date:** " + today + "\n**Archetype:** " + archetype + "\n**Score:** " + score + "/5\n**URL:** " + item.url + "\n**Legitimacy:** " + legitimacy + "\n**PDF:** pending\n**Tool:** " + provider + "\n\n---\n\n" + text.replace(/---SCORE_SUMMARY---[\s\S]*?---END_SUMMARY---/, "").trim() + "\n";
     fs.writeFileSync(reportFile, reportContent, "utf8");
     const status = parseFloat(score) >= 4.0 ? "Evaluated" : "SKIP";
-    const tsvLine = "AUTO_NUM\t" + today + "\t" + company + "\t" + role + "\t" + status + "\t" + score + "/5\t❌\t[AUTO_NUM](reports/" + reportFilename + ")\tAutomated cloud evaluation (" + provider + ")\n";
+    const tsvLine = "AUTO_NUM\t" + today + "\t" + company + "\t" + role + "\t" + status + "\t" + score + "/5\t❌\t[AUTO_NUM](reports/" + reportFilename + ")\tAutomated cloud evaluation (" + provider + ") — " + item.url + "\n";
     fs.writeFileSync(additionsDir + "/" + slug + "-" + Date.now() + ".tsv", tsvLine, "utf8");
     console.log("✅ Evaluated (" + score + "/5 via " + provider + ") -> " + reportFile);
   } catch (e) {

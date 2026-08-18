@@ -245,6 +245,18 @@ tracked_companies:
     careers_url: https://www.shipveho.com/careers/
     enabled: true
     notes: Technology-driven last-mile delivery service.
+  - name: World Wide Technology (WWT)
+    careers_url: https://myjobs.adp.com/wwtexternalcareersite/cx/job-listing
+    scan_method: websearch
+    scan_query: site:myjobs.adp.com/wwtexternalcareersite "Manager" OR "Analyst" OR "Program" OR "Operations" OR "Engineer" OR "Consulting"
+    enabled: true
+    notes: Global technology solutions provider, systems integrator, and digital consulting enterprise.
+  - name: CCC Intelligent Solutions
+    careers_url: https://cccis.wd1.myworkdayjobs.com/en-US/broadbean_external
+    scan_method: websearch
+    scan_query: site:cccis.wd1.myworkdayjobs.com "Manager" OR "Analyst" OR "Analytics" OR "Operations" OR "Program" OR "Chicago"
+    enabled: true
+    notes: Chicago-based leading SaaS and AI platform for the property and casualty insurance and automotive ecosystem.
   - name: Anthropic
     careers_url: https://job-boards.greenhouse.io/anthropic
     api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
@@ -314,9 +326,8 @@ tracked_companies:
     notes: AI SDK, v0.dev. Frontend AI tooling.
     enabled: true
   - name: Temporal
-    careers_url: https://job-boards.greenhouse.io/temporal
-    api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
-    notes: Workflow orchestration.
+    careers_url: https://jobs.ashbyhq.com/temporal
+    notes: Workflow orchestration. (slug migrated greenhouse->ashby 2026-08-17, verify-portals)
     enabled: true
   - name: Arize AI
     careers_url: https://job-boards.greenhouse.io/arizeai
@@ -324,9 +335,8 @@ tracked_companies:
     notes: LLMOps / AI observability.
     enabled: true
   - name: RunPod
-    careers_url: https://job-boards.greenhouse.io/runpod
-    api: https://boards-api.greenhouse.io/v1/boards/runpod/jobs
-    notes: GPU cloud for AI.
+    careers_url: https://jobs.ashbyhq.com/runpod
+    notes: GPU cloud for AI. (slug migrated greenhouse->ashby 2026-08-17, verify-portals)
     enabled: true
   - name: Weights & Biases (CoreWeave)
     careers_url: https://job-boards.greenhouse.io/coreweave
@@ -488,8 +498,8 @@ tracked_companies:
     notes: Ho Chi Minh City. AI agents for supply chain and logistics workflows.
     enabled: true
   - name: Sanctuary AI
-    careers_url: https://jobs.lever.co/sanctuary
-    notes: Vancouver. Humanoid robotics and embodied AI.
+    careers_url: https://jobs.ashbyhq.com/sanctuary
+    notes: Vancouver. Humanoid robotics and embodied AI. (slug migrated lever->ashby 2026-08-17, verify-portals)
     enabled: true
   - name: Semios
     careers_url: https://apply.workable.com/semios/
@@ -510,16 +520,17 @@ tracked_companies:
     notes: Remote EU. AI-native CRM. Series B $52M.
     enabled: true
   - name: Tinybird
-    careers_url: https://jobs.ashbyhq.com/tinybird
+    careers_url: https://jobs.lever.co/tinybird
     scan_method: websearch
     scan_query: site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird
-    notes: Remote. Real-time data platform.
+    notes: Remote. Real-time data platform. (slug migrated ashby->lever 2026-08-17, verify-portals)
     enabled: true
   - name: Clarity AI
-    careers_url: https://jobs.lever.co/clarity-ai
+    careers_url: https://job-boards.greenhouse.io/clarityai
+    api: https://boards-api.greenhouse.io/v1/boards/clarityai/jobs
     scan_method: websearch
     scan_query: site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai
-    notes: Madrid/Remote. Sustainability analytics with AI.
+    notes: Madrid/Remote. Sustainability analytics with AI. (slug migrated lever->greenhouse 2026-08-17, verify-portals)
     enabled: true
   - name: Travelperk
     careers_url: https://jobs.ashbyhq.com/travelperk
@@ -589,8 +600,8 @@ tracked_companies:
     notes: Paris / Berlin / Barcelona / Milan. SMB neobank, MLOps for AI Product roles.
     enabled: true
   - name: Forto
-    careers_url: https://jobs.lever.co/forto
-    notes: Berlin DE. Digital freight forwarder, product & data roles, German + English.
+    careers_url: https://jobs.ashbyhq.com/forto
+    notes: Berlin DE. Digital freight forwarder, product & data roles, German + English. (slug migrated lever->ashby 2026-08-17, verify-portals)
     enabled: true
   - name: Lakera
     careers_url: https://jobs.ashbyhq.com/lakera.ai
@@ -722,9 +733,8 @@ tracked_companies:
     notes: AI-native GTM and workflow automation platform.
     enabled: true
   - name: Runway
-    careers_url: https://job-boards.greenhouse.io/runwayml
-    api: https://boards-api.greenhouse.io/v1/boards/runwayml/jobs
-    notes: Generative AI video and creative tooling platform.
+    careers_url: https://jobs.ashbyhq.com/runway
+    notes: Generative AI video and creative tooling platform. (slug migrated greenhouse->ashby 2026-08-17, verify-portals)
     enabled: true
   - name: Hightouch
     careers_url: https://job-boards.greenhouse.io/hightouch
@@ -938,13 +948,14 @@ tracked_companies:
     enabled: true
     notes: Financial services and software as a service company.
   - name: Parallel
-    careers_url: https://jobs.lever.co/parallel-systems
+    careers_url: https://job-boards.greenhouse.io/parallel
+    api: https://boards-api.greenhouse.io/v1/boards/parallel/jobs
     enabled: true
-    notes: Develops autonomous battery-electric rail vehicles (Parallel Systems).
+    notes: Develops autonomous battery-electric rail vehicles (Parallel Systems). (slug migrated lever->greenhouse 2026-08-17, verify-portals)
   - name: Retell AI
-    careers_url: https://jobs.lever.co/retellai
+    careers_url: https://jobs.ashbyhq.com/retell-ai
     enabled: true
-    notes: AI platform for building human-like voice agents.
+    notes: AI platform for building human-like voice agents. (slug migrated lever->ashby 2026-08-17, verify-portals)
   - name: Interfere
     careers_url: https://interfere.com/careers
     enabled: true
@@ -974,17 +985,17 @@ tracked_companies:
     enabled: true
     notes: Multinational telecommunications holding company.
   - name: Clipboard
-    careers_url: https://boards.greenhouse.io/clipboardhealth
+    careers_url: https://jobs.ashbyhq.com/clipboard
     enabled: true
-    notes: Healthcare staffing marketplace (Clipboard Health).
+    notes: Healthcare staffing marketplace (Clipboard Health). (slug migrated greenhouse->ashby 2026-08-17, verify-portals)
   - name: Ramp
     careers_url: https://ramp.com/careers
     enabled: true
     notes: FinTech company offering corporate cards, expense management, and bill payments.
   - name: Qualified Health PBC
-    careers_url: https://jobs.lever.co/qualifiedhealth
+    careers_url: https://jobs.ashbyhq.com/qualified-health-pbc
     enabled: true
-    notes: Public benefit corporation focused on healthcare staffing and technology.
+    notes: Public benefit corporation focused on healthcare staffing and technology. (slug migrated lever->ashby 2026-08-17, verify-portals)
   - name: Lead Bank
     careers_url: https://www.lead.bank/careers
     enabled: true
@@ -1074,9 +1085,9 @@ tracked_companies:
     enabled: true
     notes: API platform for financial data aggregation.
   - name: Zensors
-    careers_url: https://boards.greenhouse.io/zensors
+    careers_url: https://jobs.ashbyhq.com/zensors
     enabled: true
-    notes: AI-powered computer vision platform for real-world analytics.
+    notes: AI-powered computer vision platform for real-world analytics. (slug migrated greenhouse->ashby 2026-08-17, verify-portals)
   - name: Grubhub
     careers_url: https://careers.grubhub.com/
     enabled: true
@@ -1530,6 +1541,10 @@ tracked_companies:
     max_pages: 5
     enabled: true
     notes: Andreessen Horowitz (a16z) Speedrun & Portfolio Talent Network — TPM & Automation
+  - name: Ericsson
+    careers_url: https://www.ericsson.com/en/careers
+    enabled: true
+    notes: Multinational networking and telecommunications company headquartered in Stockholm, Sweden.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops
@@ -1600,3 +1615,20 @@ job_boards:
     maxPages: 3
     enabled: false
     notes: SEA job platform covering ID/SG/MY/VN. Uses searchJobsV3 GraphQL endpoint (v2-alc). WAF blocks non-browser requests — works best from Playwright context.
+  - name: LinkedIn US Operations
+    provider: linkedin
+    searchKeywords: Operations Program Manager
+    searchLocation: United States
+    timeFilter: r86400
+    maxPages: 3
+    enabled: true
+    notes: Live LinkedIn Guest Search for Operations Program Manager roles in the US.
+  - name: LinkedIn US Analytics
+    provider: linkedin
+    searchKeywords: Operations Analytics Manager
+    searchLocation: United States
+    timeFilter: r86400
+    maxPages: 3
+    enabled: true
+    notes: Live LinkedIn Guest Search for Operations Analytics Manager roles in the US.
+

@@ -44,10 +44,10 @@ LEGITIMACY: <High Confidence | Proceed with Caution | Suspicious>
 
 async function callAI(jdText) {
   const providers = [
+    { name: "Mistral", fn: callMistral },
     { name: "Groq", fn: callGroq },
     { name: "Gemini", fn: callGemini },
-    { name: "GitHub-Models", fn: callGitHubModels },
-    { name: "Mistral", fn: callMistral }
+    { name: "GitHub-Models", fn: callGitHubModels }
   ];
 
   for (const p of providers) {

@@ -133,6 +133,51 @@ async function processJob(item, index, total, stagedDir, additionsDir, today) {
 
 async function main() {
   const pipelinePath = "data/pipeline.md";
+  const scanHistoryPath = "data/scan-history.tsv";
+  const applicationsPath = "data/applications.md";
+  const today = new Date().toISOString().split("T")[0];
+
+  // 1. Build set of URLs discovered today
+  const newTodayUrls = new Set();
+  if (fs.existsSync(scanHistoryPath)) {
+    const histLines = fs.readFileSync(scanHistoryPath, "utf8").split("\n").slice(1);
+    for (const row of histLines) {
+      if (!row.trim()) continue;
+      const cols = row.split("\t");
+      const url = (cols[0] || "").trim();
+      const firstSeen = (cols[1] || "").trim();
+      if (firstSeen === today && url) {
+        newTodayUrls.add(url);
+      }
+    }
+    console.log(`Scan history: ${newTodayUrls.size} URLs discovered today (${today}).`);
+  } else {
+    console.warn("No scan-history.tsv found — will proceed without scan-history date filter.");
+  }
+
+  // 2. Build set of already-tracked URLs/company-roles in applications.md
+  const trackedUrls = new Set();
+  const trackedCompanyRoles = new Set();
+  if (fs.existsSync(applicationsPath)) {
+    const appLines = fs.readFileSync(applicationsPath, "utf8").split("\n");
+    for (const line of appLines) {
+      if (!line.startsWith("|")) continue;
+      const cells = line.split("|").map(c => c.trim());
+      if (cells.length >= 5) {
+        const comp = (cells[3] || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+        const role = (cells[4] || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+        if (comp && role && comp !== "company") {
+          trackedCompanyRoles.add(`${comp}::${role}`);
+        }
+      }
+      const urlMatch = line.match(/(https?:\/\/[^\s\|\)\>]+)/);
+      if (urlMatch) {
+        trackedUrls.add(urlMatch[1]);
+      }
+    }
+    console.log(`Tracker: ${trackedCompanyRoles.size} existing company+role entries loaded.`);
+  }
+
   if (!fs.existsSync(pipelinePath)) {
     console.log("No data/pipeline.md found. Nothing to evaluate.");
     return;
@@ -141,31 +186,56 @@ async function main() {
   const lines = content.split("\n");
   const items = [];
   let inPending = false;
+  let skippedAlreadyTracked = 0;
+  let skippedNotToday = 0;
+
   for (const line of lines) {
     if (line.includes("## Pendientes") || line.includes("## Pending")) { inPending = true; continue; }
     if (line.startsWith("## ") && !line.includes("## Pendientes") && !line.includes("## Pending")) { inPending = false; }
     if (!inPending) continue;
     const urlMatch = line.match(/(https?:\/\/[^\s\|\)]+)/);
     if (urlMatch) {
+      const url = urlMatch[1];
       const parts = line.split("|").map(p => p.trim());
-      items.push({
-        url: urlMatch[1],
-        company: parts[1] || "Company",
-        role: parts[2] || "Role"
-      });
+      const company = parts[1] || "Company";
+      const role = parts[2] || "Role";
+      const compKey = company.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const roleKey = role.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const pairKey = `${compKey}::${roleKey}`;
+
+      // Filter 1: Skip if already in tracker (Applied, Interview, Evaluated, SKIP, etc.)
+      if (trackedUrls.has(url) || trackedCompanyRoles.has(pairKey)) {
+        skippedAlreadyTracked++;
+        continue;
+      }
+
+      // Filter 2: If we have today's scan history, ensure URL was first seen today
+      if (newTodayUrls.size > 0 && !newTodayUrls.has(url)) {
+        skippedNotToday++;
+        continue;
+      }
+
+      items.push({ url, company, role });
     }
   }
-  console.log("Found " + items.length + " pending jobs in pipeline.");
+
+  console.log(`Pipeline filter summary: ${items.length} new jobs to evaluate (skipped ${skippedAlreadyTracked} already in tracker, ${skippedNotToday} from prior dates).`);
+
+  if (items.length === 0) {
+    console.log("No new jobs require evaluation today. Done!");
+    return;
+  }
+
   const maxToProcess = items.length;
-  console.log("Starting parallel multi-worker pool (concurrency: 5) for " + maxToProcess + " jobs...");
   const stagedDir = "reports/staged";
   const additionsDir = "batch/tracker-additions";
   if (!fs.existsSync(stagedDir)) fs.mkdirSync(stagedDir, { recursive: true });
   if (!fs.existsSync(additionsDir)) fs.mkdirSync(additionsDir, { recursive: true });
-  const today = new Date().toISOString().split("T")[0];
 
   const concurrency = 8;
   let activeIndex = 0;
+  console.log(`Starting parallel multi-worker pool (concurrency: ${concurrency}) for ${maxToProcess} jobs...`);
+
   async function worker() {
     while (activeIndex < maxToProcess) {
       const idx = activeIndex++;

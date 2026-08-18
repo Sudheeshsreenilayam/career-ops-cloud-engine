@@ -89,3 +89,11 @@ jobs:
         git add -f reports/ batch/tracker-additions/ data/applications.md data/scan-history.tsv
         git commit -m "chore: daily automated scan and evaluation sync [skip ci]" || echo "Nothing new to commit."
         git push origin main
+
+    - name: Persist Scan History to Cloud Engine Repo
+      run: |
+        git config --global user.name "Career-Ops Cloud Bot"
+        git config --global user.email "bot@career-ops.local"
+        git add data/scan-history.tsv
+        git commit -m "chore: update scan-history dedup baseline [skip ci]" || echo "No scan-history changes."
+        git push origin main || echo "Push skipped."

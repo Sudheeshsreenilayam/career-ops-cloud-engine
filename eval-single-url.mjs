@@ -193,8 +193,16 @@ async function main() {
   fs.writeFileSync(reportFile, reportContent, "utf8");
 
   const status = parseFloat(score) >= 4.0 ? "Evaluated" : "SKIP";
-  const tsvLine = `AUTO_NUM\t${today}\t${company}\t${role}\t${status}\t${score}/5\t❌\t[AUTO_NUM](reports/${reportFilename})\tMobile cloud evaluation (${provider}) — ${targetUrl}\n`;
-  fs.writeFileSync(path.join(additionsDir, `${slug}-${Date.now()}.tsv`), tsvLine, "utf8");
+  let nextAppNum = 1;
+  const appFile = path.join(process.cwd(), "data", "applications.md");
+  if (fs.existsSync(appFile)) {
+    const nums = (fs.readFileSync(appFile, "utf8").match(/\|\s*(\d+)\s*\|/g) || [])
+      .map(m => parseInt(m.replace(/[^0-9]/g, ""), 10))
+      .filter(n => !isNaN(n));
+    if (nums.length > 0) nextAppNum = Math.max(...nums) + 1;
+  }
+  const tsvLine = `${nextAppNum}\t${today}\t${company}\t${role}\t${status}\t${score}/5\t❌\t[${nextAppNum}](reports/${reportFilename})\tMobile cloud evaluation (${provider}) — ${targetUrl}\n`;
+  fs.writeFileSync(path.join(additionsDir, `${nextAppNum}-${slug}.tsv`), tsvLine, "utf8");
 
   console.log(`\n🎉 Completed Evaluation: ${company} — ${role} (${score}/5 via ${provider})`);
 

@@ -2,8 +2,8 @@ name: Daily Cloud Scanner & Evaluator
 
 on:
   schedule:
-    # 5:00 AM CDT (Chicago) -> 10:00 UTC
-    - cron: "0 10 * * *"
+    # 9:00 AM CDT (Chicago) -> 14:00 UTC
+    - cron: "0 14 * * *"
   workflow_dispatch:
 
 permissions:
@@ -89,6 +89,13 @@ jobs:
         git add -f reports/ batch/tracker-additions/ data/applications.md data/scan-history.tsv
         git commit -m "chore: daily automated scan and evaluation sync [skip ci]" || echo "Nothing new to commit."
         git push origin main
+
+    - name: Send Telegram Daily Summary
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: |
+        node send-telegram-summary.mjs
 
     - name: Persist Scan History to Cloud Engine Repo
       run: |

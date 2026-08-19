@@ -101,6 +101,6 @@ jobs:
       run: |
         git config --global user.name "Career-Ops Cloud Bot"
         git config --global user.email "bot@career-ops.local"
-        git add data/scan-history.tsv
+        git add -f data/scan-history.tsv 2>/dev/null || true
         git commit -m "chore: update scan-history dedup baseline [skip ci]" || echo "No scan-history changes."
         git push origin main || echo "Push skipped."

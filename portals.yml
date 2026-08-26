@@ -1545,6 +1545,2022 @@ tracked_companies:
     careers_url: https://www.ericsson.com/en/careers
     enabled: true
     notes: Multinational networking and telecommunications company headquartered in Stockholm, Sweden.
+  - name: Abbott
+    careers_url: https://www.jobs.abbott/
+    enabled: true
+    notes: Global healthcare company specializing in diagnostics, medical devices, nutrition, and branded generic medicines.
+  - name: DriveTime (Family of Brands)
+    careers_url: https://www.drivetime.com/careers
+    enabled: true
+    notes: Used car retailer and finance company with multiple brands under its umbrella.
+  - name: HAVI België
+    careers_url: https://www.havi.com/careers
+    enabled: true
+    notes: Global supply chain management company specializing in logistics, packaging, and marketing execution for the food service industry.
+  - name: DriveTime Family of Brands (Bridgecrest)
+    careers_url: https://www.bridgecrest.com/careers
+    enabled: true
+    notes: Auto finance company under the DriveTime family of brands.
+  - name: ADP
+    careers_url: https://jobs.adp.com/
+    enabled: true
+    notes: Provider of human resources management software and services.
+  - name: Adyen
+    careers_url: https://www.adyen.com/careers
+    enabled: true
+    notes: Global payment company that enables businesses to accept payments.
+  - name: AFL (UltiPro)
+    careers_url: https://www.aflglobal.com/About-AFL/Careers.aspx
+    enabled: true
+    notes: Manufacturer of fiber optic products and provider of network services.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration platform that offers a spreadsheet-database hybrid.
+  - name: Alliant Credit Union
+    careers_url: https://www.alliantcreditunion.org/careers
+    enabled: true
+    notes: Member-owned financial cooperative offering banking and financial services.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for fast delivery of packages.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's healthcare division focusing on pharmacy and health services.
+  - name: Amazon (Amazon Leo)
+    careers_url: https://www.amazon.jobs/en/teams/project-leo
+    enabled: true
+    notes: Amazon's initiative focused on logistics and delivery innovation.
+  - name: Amazon (Annapurna Labs)
+    careers_url: https://www.amazon.jobs/en/teams/annapurna-labs
+    enabled: true
+    notes: Amazon's semiconductor and hardware development division.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS – Data Center Communities)
+    careers_url: https://www.amazon.jobs/en/teams/aws-data-center-communities
+    enabled: true
+    notes: AWS team managing data center operations and community relations.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services, the cloud computing platform of Amazon.
+  - name: Amazon (AWS Data Center Operations)
+    careers_url: https://www.amazon.jobs/en/teams/aws-data-center-operations
+    enabled: true
+    notes: AWS team responsible for data center infrastructure and operations.
+  - name: Amazon (AWS – Data Center Project Management)
+    careers_url: https://www.amazon.jobs/en/teams/aws-data-center-project-management
+    enabled: true
+    notes: AWS team managing data center construction and project delivery.
+  - name: Amazon (AWS Data Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-data-services
+    enabled: true
+    notes: AWS team providing data management and analytics services.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-government-delivery
+    enabled: true
+    notes: AWS team focused on delivering cloud solutions to government clients.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-network-deployment
+    enabled: true
+    notes: AWS team responsible for deploying and managing global network infrastructure.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing foundational cloud infrastructure services.
+  - name: Amazon (AWS Mantle)
+    careers_url: https://www.amazon.jobs/en/teams/aws-mantle
+    enabled: true
+    notes: AWS team focused on secure cloud infrastructure for regulated workloads.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and AI.
+  - name: Amazon.com, Inc.
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Parent company of Amazon's e-commerce and technology divisions.
+  - name: Amazon.com, Inc. or its affiliates
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Umbrella term for Amazon and its subsidiary companies.
+  - name: Amazon.com LLC
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Legal entity under which Amazon operates its e-commerce business.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Amazon entity providing services to support its e-commerce and cloud operations.
+  - name: Amazon Data Services, Inc. - A19
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Amazon entity focused on data services and infrastructure.
+  - name: Amazon (Health Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-health-finance
+    enabled: true
+    notes: Amazon team managing financial operations for healthcare initiatives.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's initiative to provide global broadband via satellite.
+  - name: Amazon (Kuiper Commercial Services LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon Kuiper's commercial services division.
+  - name: Amazon Kuiper Holding 1 LLC
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Legal entity under Amazon Kuiper for satellite broadband services.
+  - name: Amazon Kuiper Infrastructure LLC (Amazon Leo)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon Kuiper's infrastructure division for satellite broadband.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon Kuiper's manufacturing division for satellite production.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/project-leo
+    enabled: true
+    notes: Amazon's financial operations team for logistics and delivery innovation.
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service for fast package delivery.
+  - name: Amazon (Project Leo)
+    careers_url: https://www.amazon.jobs/en/teams/project-leo
+    enabled: true
+    notes: Amazon's logistics and delivery innovation initiative.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Amazon's Ring division, focusing on smart home security and the Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-transportation-services
+    enabled: true
+    notes: Amazon's transportation team managing long-haul freight and logistics.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon's cloud computing platform and services division.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: Amazon's Whole Foods Market division focusing on online grocery delivery.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform for outbound sales teams.
+  - name: AndHealth
+    careers_url: https://www.andhealth.com/careers
+    enabled: true
+    notes: Healthcare company focused on reversing chronic conditions through lifestyle medicine.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company developing advanced hardware and software for military applications.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large-scale AI models.
+  - name: Applied Systems
+    careers_url: https://www.appliedsystems.com/company/careers/
+    enabled: true
+    notes: Provider of insurance software solutions for agencies and brokerages.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for monitoring and troubleshooting machine learning models.
+  - name: BCD Travel
+    careers_url: https://www.bcdtravel.com/careers/
+    enabled: true
+    notes: Global corporate travel management company.
+  - name: Beghou
+    careers_url: https://www.beghou.com/careers
+    enabled: true
+    notes: Commercial analytics and data management company serving life sciences.
+  - name: Boomi (Dell Boomi)
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform as a service (iPaaS) provider.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: BuiltIn Employer
+    careers_url: https://builtin.com/jobs
+    enabled: true
+    notes: Tech job board and community platform for startups and tech companies.
+  - name: Cboe Global Markets
+    careers_url: https://www.cboe.com/careers/
+    enabled: true
+    notes: Operator of options and futures exchanges, and global trading solutions provider.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Content platform that enables teams to manage, integrate, and deliver digital content.
+  - name: CoreWeave
+    careers_url: https://www.coreweave.com/careers
+    enabled: true
+    notes: Specialized cloud provider offering high-performance computing for AI and machine learning.
+  - name: Crypto.com
+    careers_url: https://crypto.com/careers
+    enabled: true
+    notes: Cryptocurrency exchange and blockchain technology company.
+  - name: CSG Talent (Food Manufacturing Client)
+    careers_url: https://www.csg-talent.com/
+    enabled: true
+    notes: Recruitment agency specializing in food manufacturing and related industries.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for technical talent.
+  - name: Digible
+    careers_url: https://www.digible.com/careers
+    enabled: true
+    notes: Digital marketing agency specializing in multifamily and senior living industries.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending and financial services.
+  - name: Finoit Inc
+    careers_url: https://www.finoit.com/careers/
+    enabled: true
+    notes: Software development and IT consulting company.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service, parent company of the Factor_ brand.
+  - name: Huron
+    careers_url: https://www.huronconsultinggroup.com/careers
+    enabled: true
+    notes: Management consulting firm specializing in healthcare, education, and commercial sectors.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: Jerry.ai
+    careers_url: https://getjerry.com/careers
+    enabled: true
+    notes: Insurance comparison and brokerage platform for car and home insurance.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Global financial services firm and one of the largest banks in the world.
+  - name: L&G – Asset Management, America
+    careers_url: https://www.lgimamericas.com/careers
+    enabled: true
+    notes: Legal & General's asset management division in the Americas.
+  - name: Lam Research
+    careers_url: https://www.lamresearch.com/careers/
+    enabled: true
+    notes: Semiconductor manufacturing equipment company.
+  - name: LaSalle Network
+    careers_url: https://www.lasallenetwork.com/careers
+    enabled: true
+    notes: Staffing and recruiting agency specializing in professional and financial services.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.lgimamericas.com/careers
+    enabled: true
+    notes: Asset management division of Legal & General in the Americas.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for automating legal workflows.
+  - name: Lovable
+    careers_url: https://www.lovable.ai/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider specializing in cybersecurity, cloud, and managed services.
+  - name: Nestlé Health Science
+    careers_url: https://www.nestlehealthscience.com/careers
+    enabled: true
+    notes: Nestlé's health science division focusing on nutritional therapies and medical nutrition.
+  - name: Netflix
+    careers_url: https://jobs.netflix.com/
+    enabled: true
+    notes: Streaming entertainment service and production company.
+  - name: Oil-Dri Corporation of America
+    careers_url: https://www.oildri.com/careers
+    enabled: true
+    notes: Manufacturer of sorbent products for industrial, automotive, and agricultural applications.
+  - name: Oracle Cloud
+    careers_url: https://www.oracle.com/corporate/careers/
+    enabled: true
+    notes: Cloud computing services division of Oracle Corporation.
+  - name: OUTFORM
+    careers_url: https://www.outform.com/careers
+    enabled: true
+    notes: Retail design and manufacturing company specializing in branded environments.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Digital payments company providing online payment solutions.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com/careers
+    enabled: true
+    notes: Global financial services firm offering brokerage, investment, and trading services.
+  - name: Reyes Beverage Group
+    careers_url: https://www.reyesbeveragegroup.com/careers
+    enabled: true
+    notes: One of the largest beer distributors in the United States.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Mental health platform connecting patients with therapists.
+  - name: SailPoint
+    careers_url: https://www.sailpoint.com/company/careers/
+    enabled: true
+    notes: Identity governance and administration software company.
+  - name: Saragossa
+    careers_url: https://www.saragossa.com/careers
+    enabled: true
+    notes: Recruitment process outsourcing and talent acquisition company.
+  - name: Strata Decision Technology
+    careers_url: https://www.stratadecision.com/careers/
+    enabled: true
+    notes: Healthcare financial planning and analytics software provider.
+  - name: TCS (Tata Consultancy Services)
+    careers_url: https://www.tcs.com/careers
+    enabled: true
+    notes: Global IT services, consulting, and business solutions company.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for automating business processes.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company providing crop management solutions.
+  - name: tms
+    careers_url: https://www.tmssolutions.com/careers
+    enabled: true
+    notes: Transportation management and logistics solutions provider.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency providing credit information and analytics.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers and content creators, owned by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: Vizient
+    careers_url: https://www.vizientinc.com/careers
+    enabled: true
+    notes: Healthcare performance improvement company offering supply chain and clinical solutions.
+  - name: Waymo
+    careers_url: https://waymo.com/careers/
+    enabled: true
+    notes: Autonomous driving technology company, subsidiary of Alphabet Inc.
+  - name: Zenith (Publicis Groupe)
+    careers_url: https://www.zenithmedia.com/careers
+    enabled: true
+    notes: Media and communications planning agency, part of Publicis Groupe.
+  - name: ZS
+    careers_url: https://www.zs.com/careers
+    enabled: true
+    notes: Sales and marketing consulting firm specializing in data-driven solutions.
+  - name: PAR Technology
+    careers_url: https://www.partech.com/careers
+    enabled: true
+    notes: Technology company providing point-of-sale and management solutions for restaurants and retail.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative providing backend services for developers.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice technology company specializing in voice cloning and synthesis.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription technology company.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered platform for automating customer service interactions.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform enabling businesses to sync customer data across tools.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration platform for creating and sharing relational databases.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for fast package delivery.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's healthcare division focused on pharmacy and financial services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services, the cloud computing division of Amazon.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-public-sector
+    enabled: true
+    notes: AWS team delivering cloud solutions for government agencies.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-network-development
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing core infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team focused on scalable cloud infrastructure.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Multinational technology company focused on e-commerce, cloud computing, and AI.
+  - name: Amazon.com, Inc. (as indicated by footer)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's e-commerce and cloud services.
+  - name: Amazon.com, Inc. (as inferred from copyright)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's global operations.
+  - name: Amazon.com, Inc. (derived from copyright)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's retail and technology services.
+  - name: Amazon.com, Inc. (inferred from copyright)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's global business.
+  - name: Amazon.com, Inc. (Inferred from error message)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's digital services.
+  - name: Amazon.com, Inc. (Placeholder - from copyright footer)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Placeholder entry for Amazon's corporate entity.
+  - name: Amazon.com, Inc. (unspecified)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Unspecified division of Amazon.com, Inc.
+  - name: Amazon.com (server error page – no actual company posting)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Placeholder for Amazon's server error page.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Subsidiary of Amazon providing services to sellers and customers.
+  - name: Amazon (implied)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Implied reference to Amazon's corporate entity.
+  - name: Amazon (inferred from text)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Inferred reference to Amazon's business operations.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's satellite broadband internet initiative.
+  - name: Amazon (Kuiper Commercial Services LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary managing Amazon's Kuiper satellite internet project.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing arm of Amazon's Kuiper satellite project.
+  - name: Amazon (Kuiper Manufacturing Enterprises LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing division for Amazon's Kuiper satellite initiative.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-finance
+    enabled: true
+    notes: Amazon's financial services division.
+  - name: Amazon (Leo)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-finance
+    enabled: true
+    notes: Amazon's financial operations team.
+  - name: Amazon (placeholder/error text)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Placeholder or error reference for Amazon.
+  - name: Amazon (placeholder/error)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Placeholder or error reference for Amazon.
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Amazon's Ring division focused on smart home security and the Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon's logistics and transportation division.
+  - name: Amazon (unspecified)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Unspecified division of Amazon.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon's cloud computing platform.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: Amazon's grocery e-commerce division under Whole Foods Market.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers
+    enabled: true
+    notes: Defense technology company focused on autonomous systems.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large language models.
+  - name: Arize AI
+    careers_url: https://arize.com/careers
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers
+    enabled: true
+    notes: Cloud-based integration platform for connecting applications and data.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: BuiltIn Employer
+    careers_url: https://www.builtin.com/jobs
+    enabled: true
+    notes: Tech job board and employer branding platform.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers
+    enabled: true
+    notes: Headless content management system (CMS) platform.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for technical roles.
+  - name: Enova
+    careers_url: https://www.enova.com/careers
+    enabled: true
+    notes: Financial technology company providing online lending services.
+  - name: Harris / Oakmark
+    careers_url: https://www.harrisassoc.com/careers
+    enabled: true
+    notes: Investment management firm (Harris Associates, affiliated with Oakmark Funds).
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service, parent company of Factor_ (prepared meals).
+  - name: HelloFresh (Factor_)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: HelloFresh's prepared meal delivery brand, Factor_.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit delivery company.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: Jerry
+    careers_url: https://getjerry.com/careers
+    enabled: true
+    notes: Insurance comparison and brokerage platform for car and home insurance.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com
+    enabled: true
+    notes: Global financial services firm and investment bank.
+  - name: JPMorganChase
+    careers_url: https://careers.jpmorgan.com
+    enabled: true
+    notes: Global financial services firm (alternate name format).
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers
+    enabled: true
+    notes: Asset management division of Legal & General in the Americas.
+  - name: Legal & General
+    careers_url: https://www.legalandgeneralgroup.com/careers
+    enabled: true
+    notes: British multinational financial services company.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for enterprise collaboration and decision-making.
+  - name: Lovable
+    careers_url: https://www.lovable.ai/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider specializing in cloud, security, and networking.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Digital payments company facilitating online transactions.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com.sg/careers
+    enabled: true
+    notes: Global financial services firm offering brokerage, investment banking, and asset management.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Behavioral health platform connecting patients with therapists.
+  - name: Strata Decision Technology
+    careers_url: https://www.strata decision.com/careers
+    enabled: true
+    notes: Healthcare financial planning and analytics software provider.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise procurement and supply chain optimization.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Precision agriculture technology company using IoT and AI.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency and data analytics company.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers
+    enabled: true
+    notes: Live streaming platform for gamers, owned by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative for building backend applications.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice synthesis and text-to-speech technology company.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription technology.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform for syncing customer data across tools.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration platform for creating and sharing relational databases.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for package delivery.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's healthcare division focused on pharmacy and financial services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services, the cloud computing division of Amazon.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-government-delivery
+    enabled: true
+    notes: AWS team delivering cloud solutions for government agencies.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-network-deployment
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing foundational cloud infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team providing core infrastructure services.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Multinational technology and e-commerce company.
+  - name: Amazon.com, Inc.
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's e-commerce and cloud computing divisions.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Subsidiary of Amazon providing services to sellers and customers.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's satellite broadband internet initiative.
+  - name: Amazon (Kuiper Commercial Services LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary managing Amazon's Kuiper satellite internet project.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing arm of Amazon's Kuiper satellite project.
+  - name: Amazon (Kuiper Manufacturing Enterprises LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing division for Amazon's Kuiper satellite initiative.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/leo-finance
+    enabled: true
+    notes: Amazon's financial services team (internal).
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Smart home security division of Amazon, including the Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon's logistics and transportation division.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Cloud computing platform by Amazon.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: E-commerce division of Whole Foods Market, owned by Amazon.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company focused on autonomous systems.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large language models.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform for connecting applications and data.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: BuiltIn Employer
+    careers_url: https://www.builtin.com/jobs
+    enabled: true
+    notes: Tech job board and hiring platform (not a company, but included for context).
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Headless content management system (CMS) platform.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for software engineers.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending services.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service, including the Factor_ brand.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit delivery company.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: Asset management division of Legal & General in the Americas.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for enterprise collaboration and automation.
+  - name: Lovable
+    careers_url: https://www.lovable.co/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider specializing in cloud, security, and networking.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Digital payments and financial services company.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com/careers
+    enabled: true
+    notes: Global financial services firm offering brokerage and investment services.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Behavioral health technology company connecting patients with providers.
+  - name: Strata Decision Technology
+    careers_url: https://www.stratadecision.com/careers
+    enabled: true
+    notes: Healthcare financial planning and analytics platform.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company providing crop management solutions.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency and data analytics company.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers, owned by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative for building backend applications.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered conversational platform for customer service automation.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice generation and text-to-speech platform.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription technology.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform for syncing customer data across tools.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration platform for creating and sharing relational databases.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for package delivery.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's healthcare division focused on pharmacy and financial services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services, the cloud computing platform.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-public-sector
+    enabled: true
+    notes: AWS team delivering cloud solutions for government agencies.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-network-development
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing core infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team focused on infrastructure services and solutions.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Multinational technology company focused on e-commerce, cloud computing, and AI.
+  - name: Amazon.com, Inc.
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Parent company of Amazon's e-commerce and technology services.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Subsidiary of Amazon providing services to support its operations.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's satellite broadband internet initiative.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing arm of Amazon's Kuiper satellite project.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/leo-finance
+    enabled: true
+    notes: Amazon's financial services team under the Leo brand.
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Amazon's Ring division, focused on smart home security and the Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon's logistics team managing line haul transportation.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon's cloud computing division.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: Amazon's Whole Foods division focused on e-commerce and grocery delivery.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company focused on autonomous systems.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large language models.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform for connecting applications and data.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Headless content management system (CMS) platform.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for technical talent.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending services.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service, including the Factor_ brand for prepared meals.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit delivery company.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: Asset management division of Legal & General in the Americas.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for enterprise decision-making.
+  - name: Lovable
+    careers_url: https://www.lovable.ai/careers
+    enabled: true
+    notes: AI-driven customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider offering managed services and cybersecurity.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Digital payments company facilitating online transactions.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com.sg/careers
+    enabled: true
+    notes: Global financial services firm offering brokerage and investment services.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Behavioral health technology company improving access to therapy.
+  - name: Strata Decision Technology
+    careers_url: https://www.strata decision.com/careers
+    enabled: true
+    notes: Healthcare financial planning and analytics platform.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Precision agriculture technology company using IoT and AI.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency providing data and analytics.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers and content creators, owned by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative for building backend applications.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice technology company for generating realistic speech.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription technology.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-driven enterprise automation platform.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform for syncing customer data across tools.
+  - name: BMO Financial Group
+    careers_url: https://jobs.bmo.com/
+    enabled: true
+    notes: Canadian multinational investment bank and financial services company.
+  - name: Chicago Public Schools (CPS)
+    careers_url: https://www.cps.edu/careers/
+    enabled: true
+    notes: Public school district serving Chicago, Illinois.
+  - name: Jerry.ai
+    careers_url: https://www.jerry.com/careers
+    enabled: true
+    notes: Insurtech company specializing in car insurance comparison and savings.
+  - name: Caterpillar Inc
+    careers_url: https://www.caterpillar.com/en/careers.html
+    enabled: true
+    notes: Manufacturer of construction and mining equipment, diesel and natural gas engines, and industrial gas turbines.
+  - name: Tempus
+    careers_url: https://www.tempus.com/careers/
+    enabled: true
+    notes: Technology company advancing precision medicine through the practical application of artificial intelligence in healthcare.
+  - name: Affirm
+    careers_url: https://www.affirm.com/careers
+    enabled: true
+    notes: Financial technology company providing installment loans to consumers at the point of sale.
+  - name: Mayer Brown
+    careers_url: https://www.mayerbrown.com/en/careers
+    enabled: true
+    notes: Global law firm providing legal services to corporations, financial services institutions, and governments.
+  - name: Synchrony
+    careers_url: https://www.synchrony.com/careers.html
+    enabled: true
+    notes: Consumer financial services company offering private label credit cards, installment loans, and savings products.
+  - name: Encore
+    careers_url: https://www.encore.com/careers
+    enabled: true
+    notes: Provider of technology-enabled services for the recovery of debt.
+  - name: Health Care Service Corporation
+    careers_url: https://www.hcsc.com/careers
+    enabled: true
+    notes: Mutual legal reserve company and independent licensee of the Blue Cross and Blue Shield Association.
+  - name: Perform Properties
+    careers_url: https://www.performproperties.com/careers
+    enabled: true
+    notes: Real estate investment and management firm.
+  - name: Federal Home Loan Bank of Chicago
+    careers_url: https://www.fhlbc.com/careers
+    enabled: true
+    notes: Wholesale bank providing liquidity to member financial institutions in Illinois and Wisconsin.
+  - name: SPECTRAFORCE (for client)
+    careers_url: https://www.spectraforce.com/careers
+    enabled: true
+    notes: IT staffing and workforce solutions provider.
+  - name: The Larko Group
+    careers_url: https://www.larkogroup.com/careers
+    enabled: true
+    notes: Executive search and recruitment firm.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration service and no-code platform for creating and sharing relational databases.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Cargo airline and air transportation service operated by Amazon.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Healthcare division of Amazon, focusing on pharmacy and healthcare services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption and innovation.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Cloud computing division of Amazon providing on-demand cloud services.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-public-sector
+    enabled: true
+    notes: AWS team delivering cloud solutions to government and public sector organizations.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-network-development
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing foundational cloud infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team providing core infrastructure services for cloud computing.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and AI.
+  - name: Amazon.com, Inc. (as inferred from the footer)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and AI.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Subsidiary of Amazon.com, Inc. providing services to Amazon and its customers.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's initiative to increase global broadband access through a constellation of satellites.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary of Amazon focused on manufacturing for Project Kuiper.
+  - name: Amazon (Kuiper Manufacturing Enterprises LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary of Amazon focused on manufacturing for Project Kuiper.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/leo-finance
+    enabled: true
+    notes: Amazon team focused on financial services and solutions.
+  - name: Amazon (placeholder/error text)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Placeholder or error text related to Amazon careers.
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service for fast package delivery.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Amazon's smart home and security division, known for Ring doorbells and Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon team managing line haul transportation and logistics.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Cloud computing division of Amazon providing on-demand cloud services.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: E-commerce division of Whole Foods Market, an Amazon subsidiary.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform for outbound sales.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company developing advanced hardware and software for military applications.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company focused on developing reliable, interpretable, and steerable AI systems.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform helping companies monitor, troubleshoot, and improve machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform as a service (iPaaS) provider.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Content management platform for digital content and experiences.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for technical talent.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online financial services.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit company, parent brand of Factor_ (prepared meal service).
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit company delivering pre-portioned ingredients and recipes.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services holding company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: British multinational financial services company with asset management operations in America.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for legal document automation and contract management.
+  - name: Lovable
+    careers_url: https://www.lovable.ai/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider offering managed services, cloud, and cybersecurity.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Online payments system supporting online money transfers and digital payments.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com/careers
+    enabled: true
+    notes: Global financial services provider offering brokerage, investment, and trading services.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Mental health platform connecting patients with therapists and psychiatrists.
+  - name: Strata Decision Technology
+    careers_url: https://www.strata decision.com/careers
+    enabled: true
+    notes: Provider of financial analytics, planning, and performance management software for healthcare.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and process optimization.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company providing precision farming solutions.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency providing credit information and risk management services.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers, acquired by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Global safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative providing backend services for developers.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice technology company specializing in realistic text-to-speech and voice cloning.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition technology company.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform enabling companies to sync customer data from warehouses to business tools.
+  - name: Chicago Public Schools (CPS)
+    careers_url: https://www.cps.edu/careers/
+    enabled: true
+    notes: Public school district in Chicago, Illinois.
+  - name: Jerry.ai
+    careers_url: https://www.jerry.com/careers
+    enabled: true
+    notes: Insurtech company specializing in car insurance comparison and savings.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration platform for creating and sharing relational databases.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for package delivery.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's healthcare division focused on pharmacy and financial services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS)
+    careers_url: https://aws.amazon.com/careers/
+    enabled: true
+    notes: Amazon Web Services, a cloud computing platform.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-government-delivery
+    enabled: true
+    notes: AWS team delivering cloud solutions for government agencies.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-global-network-deployment
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team managing foundational cloud infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team overseeing core infrastructure services.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Multinational technology and e-commerce company.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Subsidiary of Amazon providing e-commerce and cloud services.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's satellite broadband internet initiative.
+  - name: Amazon (Kuiper Commercial Services LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary managing commercial operations for Amazon Kuiper.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing arm for Amazon Kuiper satellite production.
+  - name: Amazon (Kuiper Manufacturing Enterprises LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing subsidiary for Amazon Kuiper.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/en/teams/leo-finance
+    enabled: true
+    notes: Amazon's financial services team (internal).
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Smart home security company (Ring) and its Neighbors app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon's logistics team managing line haul transportation.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://aws.amazon.com/careers/
+    enabled: true
+    notes: Cloud computing platform by Amazon.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: E-commerce operations for Whole Foods Market under Amazon.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company focused on autonomous systems.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large language models.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform as a service (iPaaS).
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Headless content management system (CMS) provider.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for software engineers.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending services.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service; Factor_ is a premium brand under HelloFresh.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit delivery company.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: British multinational financial services company with asset management operations in the U.S.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for collaborative software development.
+  - name: Lovable
+    careers_url: https://www.lovable.co/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider specializing in cybersecurity and cloud services.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Online payments and digital wallet company.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com.sg/careers
+    enabled: true
+    notes: Global financial services firm offering brokerage, investment banking, and asset management.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Behavioral health technology company connecting patients with therapists.
+  - name: Strata Decision Technology
+    careers_url: https://www.strata decision.com/careers
+    enabled: true
+    notes: Healthcare financial planning and analytics software provider.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company providing precision farming solutions.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers, acquired by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Global safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative for building backend applications.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice synthesis and text-to-speech technology company.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription technology.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered enterprise search and knowledge management platform.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform for syncing customer data across tools.
+  - name: Sutherland
+    careers_url: https://www.sutherlandglobal.com/careers/
+    enabled: true
+    notes: Global digital transformation and customer experience company.
+  - name: Quest Global
+    careers_url: https://www.quest-global.com/careers/
+    enabled: true
+    notes: Engineering services and solutions provider for industries like aerospace, healthcare, and automotive.
+  - name: The Home Depot
+    careers_url: https://careers.homedepot.com/
+    enabled: true
+    notes: Largest home improvement retailer in the U.S.
+  - name: Flexport
+    careers_url: https://www.flexport.com/careers
+    enabled: true
+    notes: Freight forwarding and customs brokerage company using modern software.
+  - name: Roosevelt University
+    careers_url: https://www.roosevelt.edu/about/employment
+    enabled: true
+    notes: Private university with campuses in Chicago and Schaumburg, Illinois.
+  - name: Transdev
+    careers_url: https://www.transdevna.com/careers/
+    enabled: true
+    notes: Global provider of mobility solutions, including public transportation services.
+  - name: Apex Systems
+    careers_url: https://www.apexsystems.com/careers
+    enabled: true
+    notes: IT staffing and services firm.
+  - name: Everforth Apex
+    careers_url: https://www.everforth.com/careers
+    enabled: true
+    notes: 'Note: Everforth appears to be a separate entity; Apex Systems is listed separately.'
+  - name: Insight Global
+    careers_url: https://insightglobal.com/careers/
+    enabled: true
+    notes: Staffing and recruiting agency specializing in IT, healthcare, and other industries.
+  - name: Insight Global US Customs and Border Protection (CBP)
+    careers_url: https://insightglobal.com/careers/
+    enabled: true
+    notes: Insight Global likely serves as a staffing partner for CBP; apply via Insight Global.
+  - name: Insight Global SaaS Client
+    careers_url: https://insightglobal.com/careers/
+    enabled: true
+    notes: Insight Global staffing for a SaaS client; apply via Insight Global.
+  - name: HAVI
+    careers_url: https://www.havi.com/careers
+    enabled: true
+    notes: Global supply chain management and marketing analytics company.
+  - name: BMO US
+    careers_url: https://jobs.bmo.com/us/en
+    enabled: true
+    notes: U.S. operations of BMO Financial Group, a multinational banking and financial services company.
+  - name: Ardagh Group
+    careers_url: https://www.ardaghgroup.com/careers
+    enabled: true
+    notes: Global supplier of sustainable metal and glass packaging solutions.
+  - name: Payscale
+    careers_url: https://www.payscale.com/company/careers
+    enabled: true
+    notes: Compensation data and software company.
+  - name: Epsilon
+    careers_url: https://www.epsilon.com/us/careers
+    enabled: true
+    notes: Marketing technology and services company.
+  - name: iHeartMedia
+    careers_url: https://jobs.iheart.com/
+    enabled: true
+    notes: Mass media corporation specializing in radio broadcasting and digital media.
+  - name: Pantheon
+    careers_url: https://pantheon.io/careers
+    enabled: true
+    notes: Web operations platform for websites and web applications.
+  - name: Motorola Solutions
+    careers_url: https://www.motorolasolutions.com/en_us/about/careers.html
+    enabled: true
+    notes: Provider of communication solutions and services for public safety and commercial customers.
+  - name: Avalara
+    careers_url: https://www.avalara.com/us/en/about/jobs.html
+    enabled: true
+    notes: Software company providing tax compliance automation.
+  - name: Rangam
+    careers_url: https://www.rangam.com/careers
+    enabled: true
+    notes: Global workforce solutions provider with a focus on diversity and inclusion.
+  - name: Chicago Public Schools (CPS)
+    careers_url: https://www.cps.edu/careers
+    enabled: true
+    notes: Public school district serving Chicago, Illinois.
+  - name: Jerry.ai
+    careers_url: https://getjerry.com/careers
+    enabled: true
+    notes: Insurance comparison and brokerage platform.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Cloud collaboration service and low-code platform for building applications.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's cargo airline for package delivery.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's online pharmacy and healthcare services.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services team focused on accelerating builder productivity.
+  - name: Amazon (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon Web Services, a subsidiary providing cloud computing platforms.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: AWS team delivering cloud solutions to government clients.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: AWS team providing foundational cloud infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: AWS team managing core infrastructure services.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Multinational technology company focusing on e-commerce, cloud computing, and AI.
+  - name: Amazon.com Services LLC
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Subsidiary of Amazon providing various services.
+  - name: Amazon Kuiper (Amazon.jobs)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Amazon's initiative to increase global broadband access through a satellite constellation.
+  - name: Amazon (Kuiper Commercial Services LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary managing commercial services for Project Kuiper.
+  - name: Amazon Kuiper Manufacturing Enterprises LLC (Amazon)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Subsidiary handling manufacturing for Project Kuiper.
+  - name: Amazon (Kuiper Manufacturing Enterprises LLC)
+    careers_url: https://www.amazon.jobs/en/teams/project-kuiper
+    enabled: true
+    notes: Manufacturing arm of Amazon's Project Kuiper.
+  - name: Amazon (Leo Finance)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: 'Note: ''Leo Finance'' may refer to a specific team or project within Amazon Finance.'
+  - name: Amazon (Prime Air)
+    careers_url: https://www.amazon.jobs/en/teams/prime-air
+    enabled: true
+    notes: Amazon's drone delivery service.
+  - name: Amazon (Ring – Neighbors)
+    careers_url: https://www.amazon.jobs/en/teams/ring
+    enabled: true
+    notes: Ring is Amazon's smart home security company; Neighbors is its community app.
+  - name: Amazon (Transportation Services – Line Haul)
+    careers_url: https://www.amazon.jobs/en/teams/transportation-services
+    enabled: true
+    notes: Amazon's transportation and logistics team managing line haul operations.
+  - name: Amazon Web Services (AWS)
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Amazon's cloud computing platform.
+  - name: Amazon (Whole Foods Market E-Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: E-commerce operations for Whole Foods Market, an Amazon subsidiary.
+  - name: Amplemarket
+    careers_url: https://www.amplemarket.com/careers
+    enabled: true
+    notes: AI-powered sales automation platform.
+  - name: Anduril Industries
+    careers_url: https://www.anduril.com/careers/
+    enabled: true
+    notes: Defense technology company developing autonomous systems.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large language models.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform as a service (iPaaS) provider.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Manufacturer of marine engines, boats, and fitness equipment.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Content management platform for digital experiences.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered hiring platform for software engineers.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending and financial services.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Factor_ is a meal kit brand under HelloFresh, a meal kit delivery service.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Meal kit delivery service.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: Asset management arm of Legal & General, a multinational financial services company.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI-powered platform for legal and compliance workflows.
+  - name: Lovable
+    careers_url: https://www.lovable.ai/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers
+    enabled: true
+    notes: IT solutions provider and managed services company.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Online payments and digital payments company.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillip.com/careers
+    enabled: true
+    notes: Global financial services firm providing brokerage, investment banking, and asset management.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Mental health care platform connecting patients with therapists.
+  - name: Strata Decision Technology
+    careers_url: https://www.strata decision.com/careers
+    enabled: true
+    notes: Healthcare financial planning and analytics software company.
+  - name: TENEX.AI
+    careers_url: https://www.tenex.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company providing crop management solutions.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Consumer credit reporting agency.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers, acquired by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company providing testing, inspection, and certification services.
+  - name: Vapi
+    careers_url: https://www.vapi.ai/careers
+    enabled: true
+    notes: AI-powered voice assistant platform for businesses.
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    enabled: true
+    notes: Financial technology company providing payment solutions for small businesses.
+  - name: Supabase
+    careers_url: https://supabase.com/careers
+    enabled: true
+    notes: Open-source Firebase alternative providing backend services.
+  - name: Parloa
+    careers_url: https://www.parloa.com/careers
+    enabled: true
+    notes: AI-powered customer service automation platform.
+  - name: Deepgram
+    careers_url: https://deepgram.com/careers
+    enabled: true
+    notes: AI-powered speech recognition and transcription platform.
+  - name: ElevenLabs
+    careers_url: https://elevenlabs.io/careers
+    enabled: true
+    notes: AI voice generation and text-to-speech technology company.
+  - name: Speechmatics
+    careers_url: https://www.speechmatics.com/careers
+    enabled: true
+    notes: AI-powered speech recognition technology company.
+  - name: Sierra
+    careers_url: https://www.sierra.ai/careers
+    enabled: true
+    notes: AI-powered platform for enterprise automation and workflow optimization.
+  - name: Hightouch
+    careers_url: https://www.hightouch.com/careers
+    enabled: true
+    notes: Data activation platform enabling reverse ETL for customer data.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops
@@ -1631,4 +3647,3 @@ job_boards:
     maxPages: 3
     enabled: true
     notes: Live LinkedIn Guest Search for Operations Analytics Manager roles in the US.
-

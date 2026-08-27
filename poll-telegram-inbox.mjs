@@ -20,17 +20,38 @@ if (fs.existsSync(stateFile)) {
   } catch (e) {}
 }
 
-async function fetchTelegramUpdates() {
+async function fetchTelegramUpdates(retries = 3) {
   const url = `https://api.telegram.org/bot${token}/getUpdates?offset=${lastUpdateId + 1}&timeout=5`;
-  const res = await fetch(url);
-  const data = await res.json();
-  return data.result || [];
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeout);
+      if (!res.ok) {
+        throw new Error(`Telegram API responded with status ${res.status}`);
+      }
+      const data = await res.json();
+      return data.result || [];
+    } catch (err) {
+      console.warn(`⚠️ Telegram poll attempt ${attempt}/${retries} failed (${err.message}).`);
+      if (attempt === retries) {
+        console.error("❌ Failed to fetch Telegram updates after max retries. Exiting gracefully.");
+        return [];
+      }
+      await new Promise(r => setTimeout(r, 2000 * attempt));
+    }
+  }
+  return [];
 }
 
 async function acknowledgeTelegramUpdates(newMaxUpdateId) {
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
     // Calling getUpdates with offset = maxUpdateId + 1 tells Telegram to permanently acknowledge and delete those updates from their server queue
-    await fetch(`https://api.telegram.org/bot${token}/getUpdates?offset=${newMaxUpdateId + 1}&limit=1`);
+    await fetch(`https://api.telegram.org/bot${token}/getUpdates?offset=${newMaxUpdateId + 1}&limit=1`, { signal: controller.signal });
+    clearTimeout(timeout);
     console.log(`✅ Acknowledged updates up to ${newMaxUpdateId} on Telegram servers.`);
   } catch (e) {
     console.warn("Failed to ack updates on Telegram:", e.message);

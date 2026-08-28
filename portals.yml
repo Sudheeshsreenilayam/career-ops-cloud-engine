@@ -3561,6 +3561,194 @@ tracked_companies:
     careers_url: https://www.hightouch.com/careers
     enabled: true
     notes: Data activation platform enabling reverse ETL for customer data.
+  - name: Merge
+    careers_url: https://www.merge.dev/careers
+    enabled: true
+    notes: Unified API platform for HR, payroll, recruiting, and accounting systems.
+  - name: Insight Global US Customs and Border Protection (CBP)
+    careers_url: https://www.insightglobal.com/careers/
+    enabled: true
+    notes: Staffing and consulting firm; CBP roles may be listed under government contracts.
+  - name: Chicago Public Schools (CPS)
+    careers_url: https://www.cps.edu/careers
+    enabled: true
+    notes: Public school district serving Chicago; careers page for educators and staff.
+  - name: Jerry.ai
+    careers_url: https://www.jerry.com/careers
+    enabled: true
+    notes: AI-powered car insurance comparison and management platform.
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    enabled: true
+    notes: Low-code platform for building collaborative apps.
+  - name: Amazon (Amazon Air)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-air
+    enabled: true
+    notes: Amazon's air cargo transportation network.
+  - name: Amazon (Amazon Health – Pharmacy Finance)
+    careers_url: https://www.amazon.jobs/en/teams/amazon-pharmacy
+    enabled: true
+    notes: Amazon's pharmacy and healthcare finance operations.
+  - name: Amazon (AWS Builder Acceleration)
+    careers_url: https://www.amazon.jobs/en/teams/aws-builder-acceleration
+    enabled: true
+    notes: AWS team focused on accelerating cloud adoption for builders.
+  - name: Amazon (AWS)
+    careers_url: https://aws.amazon.com/careers/
+    enabled: true
+    notes: Amazon Web Services, cloud computing platform.
+  - name: Amazon (AWS Global Government Delivery Organization)
+    careers_url: https://www.amazon.jobs/en/teams/aws-public-sector
+    enabled: true
+    notes: AWS team delivering cloud solutions to government agencies.
+  - name: Amazon (AWS – Global Network Deployment)
+    careers_url: https://www.amazon.jobs/en/teams/aws-network-development
+    enabled: true
+    notes: AWS team responsible for global network infrastructure deployment.
+  - name: Amazon (AWS – Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: AWS team providing foundational cloud infrastructure services.
+  - name: Amazon (AWS Infrastructure Services)
+    careers_url: https://www.amazon.jobs/en/teams/aws-infrastructure-services
+    enabled: true
+    notes: Duplicate of above; AWS team managing cloud infrastructure.
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Multinational technology company focused on e-commerce, cloud computing, and AI.
+  - name: Anthropic
+    careers_url: https://www.anthropic.com/careers
+    enabled: true
+    notes: AI safety and research company developing large-scale AI systems.
+  - name: Arize AI
+    careers_url: https://arize.com/careers/
+    enabled: true
+    notes: AI observability platform for machine learning models.
+  - name: Boomi
+    careers_url: https://boomi.com/company/careers/
+    enabled: true
+    notes: Cloud-based integration platform for connecting applications and data.
+  - name: Brunswick Corporation
+    careers_url: https://www.brunswick.com/careers
+    enabled: true
+    notes: Global leader in marine, fitness, and recreation products.
+  - name: BuiltIn Employer
+    careers_url: https://www.builtin.com/jobs
+    enabled: true
+    notes: Tech job board and employer branding platform.
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    enabled: true
+    notes: Headless content management system (CMS) platform.
+  - name: Decagon
+    careers_url: https://www.decagon.ai/careers
+    enabled: true
+    notes: AI-powered software for financial services and lending.
+  - name: Enova
+    careers_url: https://www.enova.com/careers/
+    enabled: true
+    notes: Financial technology company providing online lending solutions.
+  - name: HelloFresh (Factor_ brand)
+    careers_url: https://www.factor75.com/careers
+    enabled: true
+    notes: Meal kit delivery service under HelloFresh, focusing on prepared meals.
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    enabled: true
+    notes: Global meal kit delivery company.
+  - name: IMC Trading
+    careers_url: https://www.imc.com/us/careers/
+    enabled: true
+    notes: Global market maker and proprietary trading firm.
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    enabled: true
+    notes: Multinational investment bank and financial services company.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneralgroup.com/careers/
+    enabled: true
+    notes: Asset management and investment services provider.
+  - name: Legora
+    careers_url: https://www.legora.com/careers
+    enabled: true
+    notes: AI infrastructure company focused on decentralized AI systems.
+  - name: Lovable
+    careers_url: https://www.lovable.co/careers
+    enabled: true
+    notes: AI-powered customer support automation platform.
+  - name: Myriad360
+    careers_url: https://www.myriad360.com/careers/
+    enabled: true
+    notes: IT solutions provider specializing in cloud, cybersecurity, and managed services.
+  - name: PayPal
+    careers_url: https://www.paypal.com/us/webapps/mpp/jobs
+    enabled: true
+    notes: Global leader in online payments and financial services.
+  - name: Phillip Capital Inc.
+    careers_url: https://www.phillipcapital.com/Careers
+    enabled: true
+    notes: Financial services firm offering brokerage, investment banking, and asset management.
+  - name: Rula
+    careers_url: https://www.rula.com/careers
+    enabled: true
+    notes: Behavioral health technology company improving access to mental healthcare.
+  - name: Strata Decision Technology
+    careers_url: https://www.stratadecision.com/company/careers/
+    enabled: true
+    notes: Healthcare financial planning and analytics software provider.
+  - name: TENEX.AI
+    careers_url: https://tenex.ai/careers
+    enabled: true
+    notes: AI-driven procurement and supply chain optimization platform.
+  - name: The Semios Group
+    careers_url: https://www.semios.com/careers
+    enabled: true
+    notes: Agricultural technology company specializing in precision farming solutions.
+  - name: TransUnion
+    careers_url: https://www.transunion.com/careers
+    enabled: true
+    notes: Global information and insights company providing credit and identity solutions.
+  - name: Twitch Interactive, Inc. (Amazon)
+    careers_url: https://www.twitch.tv/p/en/careers/
+    enabled: true
+    notes: Live streaming platform for gamers and content creators, owned by Amazon.
+  - name: UL Solutions
+    careers_url: https://www.ul.com/careers
+    enabled: true
+    notes: Safety science company offering testing, inspection, and certification services.
+  - name: One North
+    careers_url: https://boards.greenhouse.io/onenorth
+    enabled: true
+    notes: Venture studio and investment firm focused on early‑stage technology companies.
+  - name: Publicis Groupe
+    careers_url: https://www.publicisgroupe.com/en/careers
+    enabled: true
+    notes: Global advertising and communications holding company.
+  - name: OpenGov
+    careers_url: https://boards.greenhouse.io/opengov
+    enabled: true
+    notes: Cloud‑based software platform for public‑sector budgeting and performance management.
+  - name: Insight Global US Customs and Border Protection CBP
+    careers_url: https://www.insightglobal.com/careers
+    enabled: true
+    notes: Staffing and recruiting firm that provides personnel to U.S. Customs and Border Protection.
+  - name: Chicago Public Schools CPS
+    careers_url: https://www.cps.edu/about/working-at-cps
+    enabled: true
+    notes: Public school district serving Chicago, Illinois.
+  - name: Jerryai
+    careers_url: https://boards.greenhouse.io/jerryai
+    enabled: true
+    notes: AI‑driven platform delivering personalized education solutions.
+  - name: Amazon (Whole Foods Market E‑Commerce)
+    careers_url: https://www.amazon.jobs/en/teams/whole-foods-market
+    enabled: true
+    notes: Amazon's e‑commerce division for Whole Foods Market.
+  - name: Legal & General (Asset Management, America)
+    careers_url: https://www.legalandgeneral.com/careers
+    enabled: true
+    notes: Asset management and financial services firm operating in the United States.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops

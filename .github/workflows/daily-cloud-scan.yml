@@ -2,8 +2,9 @@ name: Daily Cloud Scanner & Evaluator
 
 on:
   schedule:
-    # 9:00 AM CDT (Chicago) -> 14:00 UTC
-    - cron: "0 14 * * *"
+    # 8:17 AM CDT & 1:17 PM CDT (13:17 UTC & 18:17 UTC) - off-hour minutes avoid GitHub Actions congestion
+    - cron: "17 13 * * *"
+    - cron: "17 18 * * *"
   workflow_dispatch:
 
 permissions:

@@ -3749,6 +3749,558 @@ tracked_companies:
     careers_url: https://www.legalandgeneral.com/careers
     enabled: true
     notes: Asset management and financial services firm operating in the United States.
+  - name: Peoples Gas
+    careers_url: https://www.peoplesgas.com/careers
+    enabled: true
+    notes: Utility company providing natural gas service in Illinois, part of NiSource
+  - name: Molex
+    careers_url: https://boards.greenhouse.io/molex
+    enabled: true
+    notes: Global manufacturer of electronic components and solutions
+  - name: Insight Global US Customs and Border Protection CBP
+    careers_url: https://www.insightglobal.com/careers
+    enabled: true
+    notes: Staffing and solutions firm that places professionals with U.S. Customs and Border Protection
+  - name: Insight Global US Customs and Border Protection  CBP
+    careers_url: https://www.cbp.gov/careers
+    enabled: true
+    notes: US Customs and Border Protection (CBP) is a federal agency under the Department of Homeland Security that secures U.S. borders, enforces customs laws, and facilitates lawful travel and trade.
+  - name: Wells Fargo
+    careers_url: https://www.wellsfargo.com/careers/
+    enabled: true
+    notes: Major U.S. multinational financial services company offering banking, investment, and mortgage products.
+  - name: DriveTime
+    careers_url: https://www.drivetimes.com/careers
+    enabled: true
+    notes: Used‑car retailer and finance company operating a network of dealerships across the United States.
+  - name: Amazon Web Services
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    enabled: true
+    notes: Cloud computing subsidiary of Amazon, providing on‑demand IT resources and services globally.
+  - name: Hadrian Automation
+    careers_url: https://boards.greenhouse.io/hadrianautomation
+    enabled: true
+    notes: Robotics and automation company developing AI-driven robotic solutions for manufacturing.
+  - name: Zencore
+    careers_url: https://jobs.lever.co/zencore
+    enabled: true
+    notes: Technology firm focused on advanced data analytics and AI-driven platforms for enterprise customers.
+  - name: Whoop
+    careers_url: https://boards.greenhouse.io/whoop
+    enabled: true
+    notes: Wearable fitness company offering performance tracking devices and health analytics.
+  - name: Shield AI
+    careers_url: https://boards.greenhouse.io/shieldai
+    enabled: true
+    notes: Defense AI startup building autonomous aircraft and software for military and security applications.
+  - name: Socure
+    careers_url: https://jobs.lever.co/socure
+    enabled: true
+    notes: Identity verification and fraud prevention platform using AI to validate digital identities.
+  - name: Clipboard Health
+    careers_url: https://jobs.lever.co/clipboardhealth
+    enabled: true
+    notes: Healthcare staffing marketplace connecting nurses and caregivers with facilities.
+  - name: Headway
+    careers_url: https://boards.greenhouse.io/headway
+    enabled: true
+    notes: Mental health platform providing online therapy and coaching services.
+  - name: Odyssey ML
+    careers_url: https://jobs.lever.co/odysseyml
+    enabled: true
+    notes: Machine learning infrastructure company offering tools for model development and deployment.
+  - name: Amazon.com (as inferred from branding)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com (implied)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. (as inferred from footer)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. (as inferred from page footer)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. (as inferred from the page footer)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. (Inferred from copyright notice)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. (inferred from copyright notice)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon.com, Inc. or its affiliates (Inferred)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Amazon (likely an error page, not a real posting)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud services leader
+  - name: Atlassian
+    careers_url: https://www.atlassian.com/company/careers
+    enabled: true
+    notes: Collaboration‑software developer, uses Greenhouse for postings
+  - name: Baxter International Inc.
+    careers_url: https://www.baxter.com/careers
+    enabled: true
+    notes: Medical‑device and pharmaceutical company, Workday‑based career site
+  - name: Clear Point Consultants
+    careers_url: https://www.clearpointconsultants.com/careers/
+    enabled: true
+    notes: Management‑consulting firm
+  - name: ComEd
+    careers_url: https://www.comed.com/Careers
+    enabled: true
+    notes: Utility subsidiary of Exelon, offers energy‑sector jobs
+  - name: CVS Health
+    careers_url: https://jobs.cvshealth.com/
+    enabled: true
+    notes: Healthcare and pharmacy retailer, Workday‑powered job portal
+  - name: Exelon
+    careers_url: https://www.exeloncorp.com/careers
+    enabled: true
+    notes: Energy‑generation and utility holding company
+  - name: Federal Reserve Bank of Boston
+    careers_url: https://www.federalreserve.gov/careers.htm
+    enabled: true
+    notes: Regional bank of the U.S. Federal Reserve System
+  - name: Fish & Richardson P.C.
+    careers_url: https://www.fishandrichardson.com/careers/
+    enabled: true
+    notes: Intellectual property law firm
+  - name: Gusto
+    careers_url: https://boards.greenhouse.io/gusto
+    enabled: true
+    notes: Payroll and HR platform for small businesses
+  - name: Jellyvision
+    careers_url: https://boards.greenhouse.io/jellyvision
+    enabled: true
+    notes: Design and storytelling agency known for The Why Try
+  - name: Liberty Mutual Insurance
+    careers_url: https://libertymutual.workday.com/en-US/careers
+    enabled: true
+    notes: Large U.S. property and casualty insurer
+  - name: Medline Industries
+    careers_url: https://www.medline.com/careers
+    enabled: true
+    notes: Medical supplies manufacturer and distributor
+  - name: NinjaTrader
+    careers_url: https://www.ninjatrader.com/careers
+    enabled: true
+    notes: Provider of trading platform software
+  - name: Nourish
+    careers_url: https://www.nourish.com/careers
+    enabled: true
+    notes: Health and wellness product company
+  - name: OnePay
+    careers_url: https://www.onepay.com/careers
+    enabled: true
+    notes: Payments processing solutions provider
+  - name: Pfizer
+    careers_url: https://pfizer.wd5.myworkdayjobs.com/Pfizer_Careers
+    enabled: true
+    notes: Global pharmaceutical corporation
+  - name: Samsara
+    careers_url: https://boards.greenhouse.io/samsara
+    enabled: true
+    notes: IoT solutions for operations and logistics
+  - name: Shields Health Solutions
+    careers_url: https://www.shieldshealth.com/careers
+    enabled: true
+    notes: Healthcare staffing and workforce solutions
+  - name: The HEICO Companies, LLC
+    careers_url: https://www.heico.com/careers
+    enabled: true
+    notes: Aerospace and defense parts manufacturer
+  - name: The JPI Group
+    careers_url: https://www.jpigroup.com/careers
+    enabled: true
+    notes: Management consulting firm
+  - name: U.S. Bank
+    careers_url: https://www.usbank.com/careers.html
+    enabled: true
+    notes: U.S. Bank is a major American financial services company offering banking, investment, and payment solutions.
+  - name: Amazon.com, Inc. (Inferred)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Global e‑commerce and cloud‑computing giant
+  - name: Amazon.com, Inc. (or affiliate – unclear)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Likely the same Amazon corporate careers site; affiliation unclear
+  - name: BMO U.S.
+    careers_url: https://www.bmo.com/main/about/careers
+    enabled: true
+    notes: U.S. operations of Bank of Montreal, a major financial services firm
+  - name: e.biT Consulting
+    careers_url: https://www.ebitconsulting.com/careers
+    enabled: true
+    notes: Consulting firm specializing in technology and digital transformation
+  - name: IT Minds LLC
+    careers_url: https://www.itminds.com/careers
+    enabled: true
+    notes: IT services and staffing company
+  - name: NVIDIA AI
+    careers_url: https://www.nvidia.com/en-us/about-nvidia/careers/
+    enabled: true
+    notes: AI and GPU hardware leader; careers hosted on NVIDIA's main site
+  - name: Prefect
+    careers_url: https://www.prefect.io/careers
+    enabled: true
+    notes: Data workflow automation platform; uses a direct careers page
+  - name: Tempus AI
+    careers_url: https://www.tempus.com/careers
+    enabled: true
+    notes: Healthcare AI company focused on precision medicine
+  - name: Wells Fargo
+    careers_url: https://www.wellsfargo.com/about/careers/
+    enabled: true
+    notes: Major U.S. bank and financial services provider
+  - name: Axon
+    careers_url: https://boards.greenhouse.io/axon
+    enabled: true
+    notes: Technology company providing law‑enforcement equipment such as body cameras and TASER devices
+  - name: Connect Search, LLC (on behalf of a hospitality & entertainment client)
+    careers_url: https://connectsearch.com/careers
+    enabled: true
+    notes: Recruiting firm that places candidates for hospitality and entertainment clients
+  - name: EY
+    careers_url: https://ey.wd5.myworkdayjobs.com/ey
+    enabled: true
+    notes: Global professional services firm offering assurance, tax, consulting and advisory
+  - name: HPE
+    careers_url: https://hpe.wd5.myworkdayjobs.com/HPE
+    enabled: true
+    notes: Hewlett Packard Enterprise, a global IT infrastructure and services provider
+  - name: Northern Trust
+    careers_url: https://northerntrust.wd5.myworkdayjobs.com/NorthernTrust
+    enabled: true
+    notes: Northern Trust, a financial services firm offering asset management and banking
+  - name: Qualcomm
+    careers_url: https://qualcomm.wd5.myworkdayjobs.com/Qualcomm
+    enabled: true
+    notes: Qualcomm, a leading semiconductor and telecommunications technology company
+  - name: Amazon.com, Inc. or its affiliates (Inferred from error message footer)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Amazon.com (inferred from error message)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Careismatic Brands
+    careers_url: https://www.careismatic.com/careers
+    enabled: true
+    notes: Consumer goods brand management firm
+  - name: iLocatum
+    careers_url: https://ilocatum.com/careers
+    enabled: true
+    notes: Location‑based services provider
+  - name: Not Specified (Amazon.com, Inc. mentioned in error message)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Novolex
+    careers_url: https://www.novolex.com/careers
+    enabled: true
+    notes: Packaging and consumer goods manufacturer
+  - name: RemoteHunter (client in physical asset management industry)
+    careers_url: https://remotehunter.com/careers
+    enabled: true
+    notes: Physical asset management SaaS platform
+  - name: Riveron
+    careers_url: https://riveron.com/careers
+    enabled: true
+    notes: Tax and accounting software solutions provider
+  - name: Ro (Ro.co)
+    careers_url: https://ro.co/careers
+    enabled: true
+    notes: Digital health and telemedicine company
+  - name: SearchWorks, LLC
+    careers_url: https://searchworks.com/careers
+    enabled: true
+    notes: Library search platform developer
+  - name: Taskrabbit
+    careers_url: https://www.taskrabbit.com/careers
+    enabled: true
+    notes: Marketplace for freelance labor
+  - name: ePayPolicy
+    careers_url: https://www.epaypolicy.com/careers
+    enabled: true
+    notes: Payroll compliance and benefits SaaS
+  - name: In-Telecom
+    careers_url: https://boards.greenhouse.io/in-telecom
+    enabled: true
+    notes: Telecommunications services provider
+  - name: ABB
+    careers_url: https://jobs.abb.com
+    enabled: true
+    notes: Global leader in power and automation technologies
+  - name: The Mom Project
+    careers_url: https://boards.greenhouse.io/themomproject
+    enabled: true
+    notes: Talent platform connecting mothers with flexible job opportunities
+  - name: International (TRATON GROUP)
+    careers_url: https://traton-group.workday.com/en-US/careers
+    enabled: true
+    notes: Commercial vehicle manufacturer group including MAN, Scania, and Volkswagen Truck & Bus
+  - name: Figma
+    careers_url: https://boards.greenhouse.io/figma
+    enabled: true
+    notes: Collaborative interface design tool for teams
+  - name: 9th Way Insignia
+    careers_url: https://jobs.lever.co/9thway
+    enabled: true
+    notes: Digital transformation consultancy specializing in data, cloud, and AI solutions.
+  - name: Daifuku America
+    careers_url: https://daifuku.wd5.myworkdayjobs.com/Daifuku
+    enabled: true
+    notes: Global material handling and automation solutions provider
+  - name: TCS
+    careers_url: https://tcs.wd5.myworkdayjobs.com/TCS
+    enabled: true
+    notes: Tata Consultancy Services, a multinational IT services and consulting firm
+  - name: Amazon (as inferred from the footer)
+    careers_url: https://www.amazon.jobs/en/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Amazon (implied by copyright)
+    careers_url: https://www.amazon.jobs/en/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Ibotta
+    careers_url: https://jobs.lever.co/ibotta
+    enabled: true
+    notes: Mobile cash‑back rewards platform
+  - name: Motive
+    careers_url: https://boards.greenhouse.io/motive
+    enabled: true
+    notes: Transportation technology company (formerly KeepTruckin)
+  - name: People Inc.
+    careers_url: https://jobs.lever.co/peopleinc
+    enabled: true
+    notes: HR and benefits technology provider
+  - name: Wintrust Financial Corporation
+    careers_url: https://wintrust.wd5.myworkdayjobs.com/Wintrust
+    enabled: true
+    notes: Regional bank and financial services firm
+  - name: Samsung SDI
+    careers_url: https://boards.greenhouse.io/samsung-sdi
+    enabled: true
+    notes: Battery and energy storage solutions subsidiary of Samsung
+  - name: Albertsons Companies
+    careers_url: https://www.albertsons.com/careers
+    enabled: true
+    notes: U.S. grocery retailer operating supermarkets and pharmacies
+  - name: Amazon.com, Inc. (as indicated by copyright)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Global e‑commerce and cloud‑computing giant
+  - name: Amazon.com, Inc. (as indicated by the footer)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Global e‑commerce and cloud‑computing giant
+  - name: Amazon.com (unspecified posting)
+    careers_url: https://www.amazon.jobs
+    enabled: true
+    notes: Global e‑commerce and cloud‑computing giant
+  - name: Amazon (Robotics Supply Chain)
+    careers_url: https://www.amazon.jobs/en/teams/robotics
+    enabled: true
+    notes: Amazon division focused on warehouse robotics and automation
+  - name: American College of Chest Physicians
+    careers_url: https://www.chestnet.org/About-Us/Careers
+    enabled: true
+    notes: Professional medical association for chest physicians
+  - name: Eve
+    careers_url: https://www.eve.com/careers
+    enabled: true
+    notes: Consumer‑tech company known for smart home and health devices
+  - name: Expedia Group
+    careers_url: https://lifeatexpediagroup.com
+    enabled: true
+    notes: Online travel company operating brands like Expedia, Hotels.com, and Vrbo
+  - name: Flywire
+    careers_url: https://www.flywire.com/careers
+    enabled: true
+    notes: Payments platform for education, healthcare, and travel
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com
+    enabled: true
+    notes: Major global financial services firm
+  - name: NBCUniversal
+    careers_url: https://jobs.nbcuni.com
+    enabled: true
+    notes: Media and entertainment conglomerate owning NBC, Universal Studios, and more
+  - name: RXO, Inc.
+    careers_url: https://www.rxo.com/careers
+    enabled: true
+    notes: Transportation and logistics provider spun off from XPO
+  - name: Salesforce (Slack Strategic Operations)
+    careers_url: https://salesforce.wd5.myworkdayjobs.com/en-US/Salesforce
+    enabled: true
+    notes: Cloud‑based CRM leader; includes Slack after acquisition
+  - name: Sedgwick
+    careers_url: https://www.sedgwick.com/careers
+    enabled: true
+    notes: Global provider of technology‑enabled risk, benefits, and integrated business solutions
+  - name: TalentHop (on behalf of "Our Client")
+    careers_url: https://www.talenthops.com/careers
+    enabled: true
+    notes: Recruitment services firm that posts on behalf of client companies
+  - name: Tendo
+    careers_url: https://www.tendo.com/careers
+    enabled: true
+    notes: Health‑technology startup offering digital solutions for physical therapy and rehabilitation
+  - name: World Market
+    careers_url: https://jobs.worldmarket.com/
+    enabled: true
+    notes: Retail chain specializing in global home‑furnishings, décor and food products
+  - name: Mars
+    careers_url: https://www.mars.com/careers
+    enabled: true
+    notes: Global manufacturer of confectionery, pet care, and other food brands
+  - name: Amazon.com, Inc. (Inferred from copyright, but not from a job posting)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Amazon.com, Inc. or its affiliates (Contextually from error message)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Amazon.com, Inc. (presumed)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Amazon (Inferred from copyright)
+    careers_url: https://www.amazon.jobs/
+    enabled: true
+    notes: Global e‑commerce and cloud computing giant
+  - name: Belvedere Trading
+    careers_url: https://www.belvederetrading.com/careers
+    enabled: true
+    notes: Proprietary trading firm specializing in options market making
+  - name: Chamberlain Group
+    careers_url: https://www.chamberlain.com/careers
+    enabled: true
+    notes: Manufacturer of garage door openers and smart home access solutions
+  - name: Cox Enterprises
+    careers_url: https://www.coxenterprises.com/careers
+    enabled: true
+    notes: Diversified holding company with interests in communications, media, and automotive services
+  - name: SharkNinja
+    careers_url: https://www.sharkninja.com/careers
+    enabled: true
+    notes: Consumer‑goods company known for Shark vacuum cleaners and Ninja kitchen appliances
+  - name: 'TalentHop (Client: Splice)'
+    careers_url: https://www.talenthop.com/careers
+    enabled: true
+    notes: Recruiting technology platform that partners with companies like Splice
+  - name: Schneider Electric
+    careers_url: https://schneider-electric.wd5.myworkdayjobs.com/SchneiderElectric
+    enabled: true
+    notes: Global specialist in energy management and automation
+  - name: DocuSign
+    careers_url: https://www.docusign.com/company/careers
+    enabled: true
+    notes: Provider of electronic signature and agreement cloud services
+  - name: Ripple
+    careers_url: https://jobs.lever.co/ripple
+    enabled: true
+    notes: Fintech company focused on blockchain‑based payment solutions
+  - name: Kansas City Kansas Community College
+    careers_url: https://www.kckcc.edu/about/employment
+    enabled: true
+    notes: Public community college serving the Kansas City, KS area
+  - name: University of Colorado Colorado Springs
+    careers_url: https://www.uccs.edu/about/employment
+    enabled: true
+    notes: Public research university in Colorado Springs
+  - name: University of Pikeville
+    careers_url: https://www.upike.edu/about/employment
+    enabled: true
+    notes: Private university in Pikeville, Kentucky
+  - name: NRG Energy
+    careers_url: https://jobs.nrg.com
+    enabled: true
+    notes: U.S. energy company focused on power generation, transmission, and retail electricity services
+  - name: NetApp
+    careers_url: https://jobs.netapp.com
+    enabled: true
+    notes: Global data storage and management solutions provider
+  - name: PNC
+    careers_url: https://jobs.pnc.com
+    enabled: true
+    notes: Major U.S. financial services corporation offering banking and investment services
+  - name: Motion Recruitment
+    careers_url: https://www.motionrecruitment.com/careers
+    enabled: true
+    notes: Recruitment agency specializing in staffing solutions across multiple industries
+  - name: Hike Medical
+    careers_url: https://www.hikemedical.com/careers
+    enabled: true
+    notes: Medical device company developing innovative health monitoring solutions
+  - name: Netradyne
+    careers_url: https://www.netradyne.com/careers
+    enabled: true
+    notes: AI‑powered video analytics platform for fleet safety and driver performance
+  - name: Antora Energy
+    careers_url: https://www.antoraenergy.com/careers
+    enabled: true
+    notes: Clean‑energy startup building modular thermal energy storage systems
+  - name: Singularity Defense
+    careers_url: https://www.singularitydefense.com/careers
+    enabled: true
+    notes: Defense technology firm focused on AI‑driven autonomous systems
+  - name: Magnendo
+    careers_url: https://www.magnendo.com/careers
+    enabled: true
+    notes: Technology startup (details limited) offering digital solutions
+  - name: Candid Health
+    careers_url: https://www.candidhealth.com/careers
+    enabled: true
+    notes: Health‑tech company providing patient‑centric care coordination platforms
+  - name: Assured
+    careers_url: https://www.assured.com/careers
+    enabled: true
+    notes: Insurance and risk‑management services provider
+  - name: Cardless
+    careers_url: https://www.cardless.com/careers
+    enabled: true
+    notes: Fintech startup offering credit‑building and payment solutions
+  - name: Wisewire
+    careers_url: https://boards.greenhouse.io/wisewire
+    enabled: true
+    notes: Data integration and workflow automation platform
+  - name: McDonald's
+    careers_url: https://www.mcdonalds.com/us/en-us/careers.html
+    enabled: true
+    notes: Global fast‑food restaurant chain
+  - name: Honeywell
+    careers_url: https://careers.honeywell.com/
+    enabled: true
+    notes: Diversified technology and manufacturing conglomerate
+  - name: Amtrak
+    careers_url: https://www.amtrak.com/careers
+    enabled: true
+    notes: U.S. passenger railroad service
+  - name: Mixpanel
+    careers_url: https://boards.greenhouse.io/mixpanel
+    enabled: true
+    notes: Product analytics platform
+  - name: Robinhood
+    careers_url: https://jobs.lever.co/robinhood
+    enabled: true
+    notes: Robinhood is a financial services platform offering commission‑free stock, crypto, and options trading.
 job_boards:
   - name: SolidJobs IT
     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops
